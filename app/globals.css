@@ -1,0 +1,121 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    font-family: var(--font-main), system-ui, sans-serif;
+    scroll-behavior: smooth;
+    scroll-padding-top: 80px;
+  }
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-family: var(--font-main), system-ui, sans-serif;
+    font-weight: 600;
+    line-height: 1.15;
+  }
+  body {
+    @apply bg-cream text-neutral-900 antialiased;
+    font-family: var(--font-main), system-ui, sans-serif;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  *,
+  ::after,
+  ::before {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* Infinite photo strip (copied from the original inline styles) */
+@keyframes scroll-right {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+.infinite-scroll {
+  animation: scroll-right 30s linear infinite;
+}
+.scroll-container {
+  mask: linear-gradient(90deg, transparent 0%, black 5%, black 95%, transparent 100%);
+  -webkit-mask: linear-gradient(90deg, transparent 0%, black 5%, black 95%, transparent 100%);
+}
+.image-item {
+  transition: transform 0.3s ease, filter 0.3s ease;
+}
+.image-item:hover {
+  transform: scale(1.05);
+  filter: brightness(1.1);
+}
+
+/* Korean: wrap between words, not mid-word (CJK text otherwise breaks anywhere). */
+html:lang(ko) {
+  word-break: keep-all;
+  overflow-wrap: break-word;
+}
+
+/* Hero: soft clouds drifting across the sky (motion-reduced visitors see them still). */
+@keyframes cloud-drift {
+  from {
+    transform: translateX(-45vw);
+  }
+  to {
+    transform: translateX(110vw);
+  }
+}
+.cloud {
+  position: absolute;
+  left: 0;
+  will-change: transform;
+  animation: cloud-drift var(--cloud-duration, 90s) linear infinite;
+  animation-delay: var(--cloud-delay, 0s);
+}
+@media (prefers-reduced-motion: reduce) {
+  .cloud {
+    animation: none !important;
+    transform: translateX(var(--cloud-rest, 20vw));
+  }
+}
+
+/* Hero: Australian flag waving (strips bob out of phase; shade darkens in the troughs). */
+@keyframes flag-wave {
+  0%, 100% { transform: translateY(calc(var(--amp) * -1)); }
+  50% { transform: translateY(var(--amp)); }
+}
+@keyframes flag-shade {
+  0%, 100% { opacity: 0; }
+  50% { opacity: 0.16; }
+}
+.flag-strip {
+  will-change: transform;
+  animation: flag-wave var(--flag-duration, 3s) ease-in-out infinite;
+  animation-delay: var(--flag-delay, 0s);
+}
+.flag-shade {
+  position: absolute;
+  inset: 0;
+  background: #0d1f3a;
+  opacity: 0;
+  animation: flag-shade var(--flag-duration, 3s) ease-in-out infinite;
+  animation-delay: var(--flag-delay, 0s);
+}
+@media (prefers-reduced-motion: reduce) {
+  .flag-strip,
+  .flag-shade {
+    animation: none !important;
+  }
+}
