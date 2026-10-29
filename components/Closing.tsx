@@ -71,10 +71,18 @@ export function Offices() {
                       {o.email}
                     </a>
                   )}
-                  <p className="flex items-start gap-2.5">
-                    <PinIcon className="mt-0.5 h-4 w-4 shrink-0 text-primary-500" />
-                    {o.address}
-                  </p>
+                  {o.address && (
+                    <p className="flex items-start gap-2.5">
+                      <PinIcon className="mt-0.5 h-4 w-4 shrink-0 text-primary-500" />
+                      {o.address}
+                    </p>
+                  )}
+                  {o.cities && (
+                    <p className="flex items-start gap-2.5">
+                      <PinIcon className="mt-0.5 h-4 w-4 shrink-0 text-primary-500" />
+                      {o.cities.join(" · ")}
+                    </p>
+                  )}
                 </div>
               </div>
             ))}

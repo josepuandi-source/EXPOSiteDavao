@@ -89,6 +89,7 @@ export const hero = {
   },
   /** Trust line along the bottom of the poster. */
   trust: ["Australia State Government Official Agent", "Since 1997 · 29 Years Experience & Trust"],
+  trustSeal: { number: "29", label: "Years" },
   titleLead: "Your Pathway to Australia",
   titleHighlight: "Starts Here",
   intro:
@@ -277,7 +278,7 @@ export const pathways = {
 export const specials = {
   title: "Register early for exclusive expo-day benefits!",
   free: "FREE!",
-  /** icon: file in /images/bkk/icon-<name>.webp. `free` adds the green "FREE!" mark. */
+  /** icon: file in /images/art/icon-<name>.webp. `free` adds the green "FREE!" mark. */
   items: [
     { icon: "visa", text: "Student visa fee scholarship of up to $2,050", free: false },
     { icon: "ticket", text: "20% off flights to Australia & New Zealand", free: false },
@@ -299,50 +300,63 @@ export const specials = {
 export const specialists = {
   title: "Free consultation with our specialists",
   subtitle: "Meet the U&I team who will look after you at the Davao EXPO.",
+  /** Shown on each card as the call to book through LINE. */
+  bookLabel: "Book via LINE",
+  /**
+   * line: a branch LINE account the card opens (none yet for Davao).
+   * background: optional photo of their city, shown soft and blurred behind the cut-out.
+   */
   items: [
     {
       name: "P'Aew",
-      photo: "/images/specialists/aew.webp",
+      photo: "/images/specialists/aew-tee.webp",
+      background: "/images/specialists/bg/bangkok-soft.webp",
       branch: "Consultant, Bangkok office",
       points: ["Specialist in English-language study plans", "ILSC and Greystone alumna", "Check, be sure, then lodge your visa"],
     },
     {
       name: "P'Fern",
-      photo: "/images/specialists/fern.webp",
+      photo: "/images/specialists/fern-tee.webp",
+      background: "/images/specialists/bg/bangkok-soft.webp",
       branch: "Consultant, Bangkok office",
       points: ["English study plans in Australia", "ILSC and Greenwich alumna", "Not sure how to find work or a place to live? Ask away!"],
     },
     {
       name: "P'Mookie",
-      photo: "/images/specialists/mookie.webp",
+      photo: "/images/specialists/mookie-tee.webp",
+      background: "/images/specialists/bg/bangkok-soft.webp",
       branch: "Counsellor, Bangkok office",
       points: ["Visa plans: Work & Holiday, work and visa extensions", "Degree study with scholarships of over 100%", "Summer courses in the school break, made easy"],
     },
     {
       name: "P'Blue",
-      photo: "/images/specialists/blue.webp",
+      photo: "/images/specialists/blue-tee.webp",
+      background: "/images/specialists/bg/chiangmai-soft.webp",
       branch: "Consultant, Chiang Mai office",
       points: ["Over 7 years of student counselling", "Study plans for Australia & New Zealand", "Full support from application to visa"],
     },
     {
       name: "P'Inez",
       photo: "/images/specialists/inez.webp",
+      background: "/images/specialists/bg/melbourne-soft.webp",
       branch: "Melbourne office",
       points: ["Degree study plans", "Experienced with 485 visa applications", "RMIT alumna, a top 3 Melbourne university"],
     },
     {
       name: "P'Titi",
       photo: "/images/specialists/titi.webp",
-      branch: "Brisbane office",
+      background: "/images/specialists/bg/goldcoast-soft.webp",
+      branch: "Brisbane & Gold Coast office",
       points: ["Knows vocational and degree pathways", "Specialist in studying in Australia", "Free help planning your study and visa"],
     },
     {
       name: "P'Irene",
       photo: "/images/specialists/irene-full.webp",
-      branch: "Brisbane office",
+      background: "/images/specialists/bg/brisbane-soft.webp",
+      branch: "Brisbane & Gold Coast office",
       points: ["Experienced in switching from Work and Holiday to a student visa", "Courses Work and Holiday visa holders can take", "Free advice and planning, no service fees at any step"],
     },
-  ],
+  ] as { name: string; photo: string; line?: string; branch: string; points: string[]; background?: string }[],
 };
 
 // ---------------------------------------------------------------------------
@@ -728,17 +742,23 @@ export const offices = {
   title: "Our Offices",
   subtitle: "Get in touch with the U&I Global team in your region.",
   items: [
-    { name: "Davao (Philippines)", address: "2nd Floor, Lucita Building, P. Sobrecarey St corner Lapu-Lapu St, Davao City, 8000" },
-    { name: "Cebu (Philippines)", address: "Digitally integrated operational office managed by U&I staff" },
-    { name: "Iloilo (Philippines)", address: "Digitally integrated operational office managed by U&I staff" },
-    { name: "Manila (Philippines)", address: "Digitally integrated operational office managed by U&I staff" },
+    { name: "Philippines", email: "information@uandiedu.com", cities: ["Davao", "Cebu", "Iloilo", "Manila"], address: "Davao office: 2nd Floor, Lucita Building, P. Sobrecarey St corner Lapu-Lapu St, Davao City, 8000" },
     { name: "Brisbane (Head Office)", phone: "+61 7 3270 7999", email: "information@uandiedu.com", address: "Level 3, 110 Mary St., Brisbane QLD 4000, Australia" },
-    { name: "Melbourne", phone: "+61 3 9639 6148", address: "Suite 202, Level 2, 517 Flinders Lane, Melbourne VIC 3000, Australia" },
-    { name: "Gold Coast", phone: "+61 421 000 060", address: "Level 1, Southport Central Commercial Tower 2, 2106/5 Lawson St., Southport QLD 4215, Australia" },
-    { name: "Bangkok (Thailand)", phones: [{ number: "+66 81-116-5186", area: "Bangkok" }, { number: "+66 99-921-5899", area: "Chiang Mai" }], address: "Samyan Mitrtown Office Tower, Floor 24, Mitrtown Office, 944 Rama IV Rd, Wang Mai, Pathum Wan, Bangkok 10330, Thailand" },
-    { name: "Seoul (Korea)", phone: "+82 10 4008 5126", address: "Digitally integrated operational office managed by U&I staff" },
-    { name: "Busan (Korea)", phone: "+82 10 4008 5126", address: "Level 9, 694 Jungang-daero, Busanjin-gu, Busan, Korea, 47216" },
-  ] as { name: string; phone?: string; /** Several numbers, each labelled with its city. */ phones?: { number: string; area: string }[]; email?: string; address: string }[],
+    { name: "Melbourne", phone: "+61 3 9639 6148", email: "information@uandiedu.com", address: "Suite 202, Level 2, 517 Flinders Lane, Melbourne VIC 3000, Australia" },
+    { name: "Gold Coast", phone: "+61 421 000 060", email: "information@uandiedu.com", address: "Level 1, Southport Central Commercial Tower 2, 2106/5 Lawson St., Southport QLD 4215, Australia" },
+    { name: "Bangkok (Thailand)", phones: [{ number: "+66 81-116-5186", area: "Bangkok" }, { number: "+66 99-921-5899", area: "Chiang Mai" }], email: "information@uandiedu.com", address: "Samyan Mitrtown Office Tower, Floor 24, Mitrtown Office, 944 Rama IV Rd, Wang Mai, Pathum Wan, Bangkok 10330, Thailand" },
+    { name: "Korea", phone: "+82 10 4008 5126", email: "information@uandiedu.com", cities: ["Seoul", "Busan"] },
+    { name: "Ulaanbaatar (Mongolia)", email: "information@uandiedu.com" },
+  ] as {
+    name: string;
+    phone?: string;
+    /** Several numbers, each labelled with its city. */
+    phones?: { number: string; area: string }[];
+    email?: string;
+    address?: string;
+    /** For a country card: the cities with a U&I office. */
+    cities?: string[];
+  }[],
 };
 
 // ---------------------------------------------------------------------------
@@ -746,7 +766,7 @@ export const offices = {
 // ---------------------------------------------------------------------------
 export const footer = {
   tagline: "Your trusted partner for Australian education & migration.",
-  trust: "Trusted by 5,000+ students worldwide",
+  trust: "Trusted by more than 30,000 students worldwide",
   links: [
     { label: "Why Attend", href: "#why-attend" },
     { label: "Schedule", href: "#dates" },
