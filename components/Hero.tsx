@@ -36,12 +36,14 @@ export default function Hero() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.7, ease: "easeOut" }}
         >
-          {/* U&I Global Philippines */}
-          <p className="flex items-baseline gap-2 whitespace-nowrap text-white drop-shadow-[0_2px_8px_rgba(4,60,100,.35)]">
-            <span className="font-heading text-[30px] font-extrabold leading-none tracking-tight md:text-[38px]">{b.lead}</span>
-            <span className="font-script text-[34px] leading-none md:text-[44px]">{b.script}</span>
-            <span className="font-heading text-[22px] font-bold leading-none md:text-[28px]">{b.country}</span>
-          </p>
+          {/* U&I Global Philippines (official wordmark), with "Since 1997" underneath */}
+          <div className="flex flex-col items-center drop-shadow-[0_2px_8px_rgba(4,60,100,.35)] lg:items-start">
+            <p className="flex items-center gap-2.5 whitespace-nowrap text-white">
+              <Image src={`${ART}/uandi-global-white.webp`} alt={`${b.lead} ${b.script}`} width={920} height={330} priority className="h-[64px] w-auto md:h-[86px]" />
+              <span className="-mt-2 font-heading text-[24px] font-medium leading-none md:text-[32px]">{b.country}</span>
+            </p>
+            <p className="-mt-1.5 font-heading text-[13px] font-semibold uppercase tracking-[0.3em] text-white md:text-[15px]">{b.since}</p>
+          </div>
 
           <ExpoLogo alt={hero.logo.alt} strap={hero.strap} strapClassName="text-[#16181C]" className="mt-4 w-[min(100%,420px)] md:w-[460px]" />
           <p className="-mt-1 font-heading text-[clamp(34px,5.4vw,54px)] font-extrabold leading-none tracking-tight text-slate-500 lg:pl-[11%]">{hero.city}</p>

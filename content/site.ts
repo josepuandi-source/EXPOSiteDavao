@@ -75,7 +75,7 @@ export const hero = {
   ] as { src: string; tint: "gold" | "white" }[],
   eyebrow: "U&I Global Philippines · Davao 2026",
   /** "U&I Global Philippines" line above the logo, as on the Davao poster. */
-  brandLine: { lead: "U&I", script: "Global", country: "Philippines" },
+  brandLine: { lead: "U&I", script: "Global", country: "Philippines", since: "Since 1997" },
   strap: "STUDY • MIGRATION",
   /** City name under the EXPO logo. */
   city: "Davao City",
