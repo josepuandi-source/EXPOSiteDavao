@@ -79,8 +79,9 @@ export default function Header() {
       <header className="sticky top-0 z-50 bg-bar shadow-[0_2px_10px_rgba(0,0,0,.12)]">
         <Container>
           <div className="flex min-h-[72px] items-center justify-between gap-5">
-            <a href="https://uandiedu.com" className="shrink-0">
+            <a href="https://uandiedu.com" className="flex shrink-0 flex-col items-start">
               <Wordmark />
+              <span className="ml-[3px] mt-0.5 font-heading text-[10px] font-semibold uppercase leading-none tracking-[0.32em] text-white/90 md:text-[11px]">Since 1997</span>
             </a>
             <nav className="hidden md:flex items-center gap-1">
               {nav.desktop.map((l) => (

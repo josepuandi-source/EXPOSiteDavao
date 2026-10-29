@@ -16,7 +16,6 @@ const skyFade = "linear-gradient(180deg, #6CA9DF 0%, rgba(150,194,234,.75) 18%, 
 export default function Hero() {
   const { hero } = useContent();
   const d = hero.details;
-  const b = hero.brandLine;
   return (
     <section id="hero" className="relative overflow-hidden bg-sky text-navy-900">
       {/* Sydney Opera House and Harbour Bridge at sunset */}
@@ -29,23 +28,15 @@ export default function Hero() {
       </div>
       <Clouds />
 
-      <div className="relative z-10 mx-auto grid max-w-7xl grid-cols-1 items-end gap-2 px-4 pt-10 sm:px-6 md:pt-14 lg:grid-cols-[1.15fr_1fr] lg:px-8">
+      <div className="relative z-10 mx-auto grid max-w-7xl grid-cols-1 items-end gap-2 px-4 pt-6 sm:px-6 md:pt-8 lg:grid-cols-[1.15fr_1fr] lg:px-8">
         <motion.div
           className="flex flex-col items-center pb-6 text-center lg:items-start lg:pb-[clamp(110px,12vw,190px)] lg:text-left"
           initial={{ opacity: 0, y: 24 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.7, ease: "easeOut" }}
         >
-          {/* U&I Global Philippines (official wordmark), with "Since 1997" underneath */}
-          <div className="flex flex-col items-center drop-shadow-[0_2px_8px_rgba(4,60,100,.35)] lg:items-start">
-            <p className="flex items-center gap-2.5 whitespace-nowrap text-white">
-              <Image src={`${ART}/uandi-global-white.webp`} alt={`${b.lead} ${b.script}`} width={920} height={330} priority className="h-[64px] w-auto md:h-[86px]" />
-              <span className="-mt-2 font-heading text-[24px] font-medium leading-none md:text-[32px]">{b.country}</span>
-            </p>
-            <p className="-mt-1.5 font-heading text-[13px] font-semibold uppercase tracking-[0.3em] text-white md:text-[15px]">{b.since}</p>
-          </div>
 
-          <ExpoLogo alt={hero.logo.alt} strap={hero.strap} strapClassName="text-[#16181C]" className="mt-4 w-[min(100%,420px)] md:w-[460px]" />
+          <ExpoLogo alt={hero.logo.alt} strap={hero.strap} strapClassName="text-[#16181C]" className="w-[min(100%,420px)] md:w-[460px]" />
           <p className="-mt-1 font-heading text-[clamp(34px,5.4vw,54px)] font-extrabold leading-none tracking-tight text-slate-500 lg:pl-[11%]">{hero.city}</p>
 
           <div className="mt-6 flex flex-col gap-2">
