@@ -306,7 +306,7 @@ export const specialists = {
   bookLabel: "Book via LINE",
   /** Desktop layout: cards per row, and start a new row after these cards (0-based). */
   perRow: 3 as 3 | 4,
-  breakAfter: [1] as number[],
+  breakAfter: [2] as number[],
   /** Shown on a card that has no photo yet. */
   photoSoon: "Photo coming soon" as string | undefined,
   /**
@@ -327,6 +327,11 @@ export const specialists = {
       photo: "/images/specialists/ph/suzzy-photo.png",
       branch: "Cagayan de Oro office",
       points: ["TAFE and nursing specialist", "Scholarships and degree specialist"],
+    },
+    {
+      name: "Cebu Specialist",
+      branch: "Cebu office",
+      points: [],
     },
     {
       name: "Gaselle",
