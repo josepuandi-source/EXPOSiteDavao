@@ -297,68 +297,58 @@ export const specials = {
 };
 
 // ---------------------------------------------------------------------------
-// Specialists — the U&I team at the EXPO (placeholder: the Bangkok team until the Davao line-up is confirmed)
+// Specialists — the U&I team at the Davao EXPO
 // ---------------------------------------------------------------------------
 export const specialists = {
   title: "Free consultation with our specialists",
   subtitle: "Meet the U&I team who will look after you at the Davao EXPO.",
   /** Shown on each card as the call to book through LINE. */
   bookLabel: "Book via LINE",
+  /** Desktop layout: cards per row, and start a new row after these cards (0-based). */
+  perRow: 3 as 3 | 4,
+  breakAfter: [1] as number[],
+  /** Shown on a card that has no photo yet. */
+  photoSoon: "Photo coming soon" as string | undefined,
   /**
-   * line: a branch LINE account the card opens (none yet for Davao).
+   * Philippines team on the top row, Australia offices below.
+   * line: a branch LINE account the card opens (none for Davao).
    * background: optional photo of their city, shown soft and blurred behind the cut-out.
+   * points: leave empty until their specialisations are confirmed.
    */
   items: [
     {
-      name: "P'Aew",
-      photo: "/images/specialists/aew-tee.webp",
-      background: "/images/specialists/bg/bangkok-soft.webp",
-      branch: "Consultant, Bangkok office",
-      points: ["Specialist in English-language study plans", "ILSC and Greystone alumna", "Check, be sure, then lodge your visa"],
+      name: "Lillian",
+      photo: "/images/specialists/ph/lillian.png",
+      branch: "Davao office",
+      points: ["8 years of experience", "Study plans for Australia", "Full support from application to visa"],
     },
     {
-      name: "P'Fern",
-      photo: "/images/specialists/fern-tee.webp",
-      background: "/images/specialists/bg/bangkok-soft.webp",
-      branch: "Consultant, Bangkok office",
-      points: ["English study plans in Australia", "ILSC and Greenwich alumna", "Not sure how to find work or a place to live? Ask away!"],
+      name: "Suzzy",
+      photo: "/images/specialists/ph/suzzy.png",
+      branch: "Cagayan de Oro office",
+      points: ["TAFE and nursing specialist", "Scholarships and degree specialist"],
     },
     {
-      name: "P'Mookie",
-      photo: "/images/specialists/mookie-tee.webp",
-      background: "/images/specialists/bg/bangkok-soft.webp",
-      branch: "Counsellor, Bangkok office",
-      points: ["Visa plans: Work & Holiday, work and visa extensions", "Degree study with scholarships of over 100%", "Summer courses in the school break, made easy"],
-    },
-    {
-      name: "P'Blue",
-      photo: "/images/specialists/blue-tee.webp",
-      background: "/images/specialists/bg/chiangmai-soft.webp",
-      branch: "Consultant, Chiang Mai office",
-      points: ["Over 7 years of student counselling", "Study plans for Australia & New Zealand", "Full support from application to visa"],
-    },
-    {
-      name: "P'Inez",
-      photo: "/images/specialists/inez.webp",
-      background: "/images/specialists/bg/melbourne-soft.webp",
-      branch: "Melbourne office",
-      points: ["Degree study plans", "Experienced with 485 visa applications", "RMIT alumna, a top 3 Melbourne university"],
-    },
-    {
-      name: "P'Titi",
-      photo: "/images/specialists/titi.webp",
-      background: "/images/specialists/bg/goldcoast-soft.webp",
-      branch: "Brisbane & Gold Coast office",
-      points: ["Knows vocational and degree pathways", "Specialist in studying in Australia", "Free help planning your study and visa"],
-    },
-    {
-      name: "P'Irene",
-      photo: "/images/specialists/irene-full.webp",
+      name: "Gaselle",
+      photo: "/images/specialists/ph/gaselle.png",
       background: "/images/specialists/bg/brisbane-soft.webp",
       branch: "Brisbane & Gold Coast office",
-      points: ["Experienced in switching from Work and Holiday to a student visa", "Courses Work and Holiday visa holders can take", "Free advice and planning, no service fees at any step"],
+      points: [],
     },
-  ] as { name: string; photo: string; line?: string; branch: string; points: string[]; background?: string }[],
+    {
+      name: "Jose",
+      photo: "/images/specialists/ph/jose.png",
+      background: "/images/specialists/bg/goldcoast-soft.webp",
+      branch: "Brisbane & Gold Coast office",
+      points: [],
+    },
+    {
+      name: "Thea",
+      background: "/images/specialists/bg/melbourne-soft.webp",
+      branch: "Melbourne office",
+      points: [],
+    },
+  ] as { name: string; photo?: string; line?: string; branch: string; points: string[]; background?: string }[],
 };
 
 // ---------------------------------------------------------------------------
