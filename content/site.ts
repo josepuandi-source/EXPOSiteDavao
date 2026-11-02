@@ -318,26 +318,26 @@ export const specialists = {
   items: [
     {
       name: "Lillian",
-      photo: "/images/specialists/ph/lillian.png",
+      photo: "/images/specialists/ph/lillian-photo.png",
       branch: "Davao office",
       points: ["8 years of experience", "Study plans for Australia", "Full support from application to visa"],
     },
     {
       name: "Suzzy",
-      photo: "/images/specialists/ph/suzzy.png",
+      photo: "/images/specialists/ph/suzzy-photo.png",
       branch: "Cagayan de Oro office",
       points: ["TAFE and nursing specialist", "Scholarships and degree specialist"],
     },
     {
       name: "Gaselle",
-      photo: "/images/specialists/ph/gaselle.png",
+      photo: "/images/specialists/ph/gaselle-clear.png",
       background: "/images/specialists/bg/brisbane-soft.webp",
       branch: "Brisbane & Gold Coast office",
       points: [],
     },
     {
       name: "Jose",
-      photo: "/images/specialists/ph/jose.png",
+      photo: "/images/specialists/ph/jose-clear.png",
       background: "/images/specialists/bg/goldcoast-soft.webp",
       branch: "Brisbane & Gold Coast office",
       points: [],
