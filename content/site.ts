@@ -207,19 +207,21 @@ export const whyAttend = {
     { src: "/images/why/crowd-hall.webp", alt: "A packed U&I EXPO hall" },
     { src: "/images/why/crowd-talks.webp", alt: "Students consulting with schools at a U&I EXPO" },
   ],
-  topicsTitle: "Talk 1-on-1 with the U&I Global team, whatever you are interested in",
+  topicsTitle: "Consult 1-on-1 with the U&I Global team for any course you are interested in",
   topics: [
-    "Work and Holiday: visa advice, short courses, finding work and a home",
-    "Short courses and summer programs",
-    "English for everyday life, business or degree study",
+    "Health and nursing",
+    "Education and teaching",
+    "Engineering and IT",
+    "Business and accounting",
     "Skills-shortage careers for your future in Australia",
     "Bachelor's, Master's and PhD",
+    "English pathways into degree study",
   ],
   promo: {
-    title: "TAFEs and leading Australian institutions are all coming, with plenty to choose from!",
+    title: "TAFEs, universities and leading Australian institutions are joining, with a variety of courses to choose from!",
     text: "Special offers and great-value promotions, only at the EXPO!",
     cta: "Register Now",
-    tagline: "Planning to go to Australia in 2027? Don't miss this one.",
+    tagline: "Planning to study in Australia? Don't miss this one.",
   },
 };
 
@@ -288,7 +290,7 @@ export const specials = {
     { icon: "koala", text: "Australian souvenir for the first 29 guests!", free: false },
   ] as { icon: "cap" | "ielts" | "van" | "ticket" | "visa" | "koala"; text: string; free: boolean }[],
   notes: [
-    "*Conditions as set by the company.",
+    "*Terms and conditions apply.",
     "*The first 29 guests to check in receive an Australian souvenir (celebrating 29 years of U&I Global).",
   ],
   cta: "Register Now",
