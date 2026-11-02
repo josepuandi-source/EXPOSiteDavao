@@ -742,12 +742,16 @@ export const offices = {
   title: "Our Offices",
   subtitle: "Get in touch with the U&I Global team in your region.",
   items: [
-    { name: "Philippines", email: "information@uandiedu.com", cities: ["Davao", "Cebu", "Iloilo", "Manila"], address: "Davao office: 2nd Floor, Lucita Building, P. Sobrecarey St corner Lapu-Lapu St, Davao City, 8000" },
+    { name: "Davao (Philippines)", phone: "0961-039-7386", email: "information@uandiedu.com", address: "2nd Floor, Lucita Building, P. Sobrecarey St corner Lapu-Lapu St, Davao City, 8000" },
+    { name: "Cebu (Philippines)", email: "information@uandiedu.com", address: "Digitally integrated operational office managed by U&I staff" },
+    { name: "Iloilo (Philippines)", email: "information@uandiedu.com", address: "Digitally integrated operational office managed by U&I staff" },
+    { name: "Manila (Philippines)", email: "information@uandiedu.com", address: "Digitally integrated operational office managed by U&I staff" },
     { name: "Brisbane (Head Office)", phone: "+61 7 3270 7999", email: "information@uandiedu.com", address: "Level 3, 110 Mary St., Brisbane QLD 4000, Australia" },
     { name: "Melbourne", phone: "+61 3 9639 6148", email: "information@uandiedu.com", address: "Suite 202, Level 2, 517 Flinders Lane, Melbourne VIC 3000, Australia" },
     { name: "Gold Coast", phone: "+61 421 000 060", email: "information@uandiedu.com", address: "Level 1, Southport Central Commercial Tower 2, 2106/5 Lawson St., Southport QLD 4215, Australia" },
     { name: "Bangkok (Thailand)", phones: [{ number: "+66 81-116-5186", area: "Bangkok" }, { number: "+66 99-921-5899", area: "Chiang Mai" }], email: "information@uandiedu.com", address: "Samyan Mitrtown Office Tower, Floor 24, Mitrtown Office, 944 Rama IV Rd, Wang Mai, Pathum Wan, Bangkok 10330, Thailand" },
-    { name: "Korea", phone: "+82 10 4008 5126", email: "information@uandiedu.com", cities: ["Seoul", "Busan"] },
+    { name: "Seoul (Korea)", phone: "+82 10 4008 5126", email: "information@uandiedu.com", address: "Digitally integrated operational office managed by U&I staff" },
+    { name: "Busan (Korea)", phone: "+82 10 4008 5126", email: "information@uandiedu.com", address: "Level 9, 694 Jungang-daero, Busanjin-gu, Busan, Korea, 47216" },
     { name: "Ulaanbaatar (Mongolia)", email: "information@uandiedu.com" },
   ] as {
     name: string;
@@ -774,9 +778,9 @@ export const footer = {
   ],
   contact: {
     email: "information@uandiedu.com",
-    /** Phone lines shown in the top bar and footer (head office until a Philippine number is confirmed). */
-    phones: [{ number: "+61 7 3270 7999", area: "Brisbane" }],
-    address: "Level 3, 110 Mary St., Brisbane QLD 4000, Australia",
+    /** Phone lines shown in the top bar and footer. */
+    phones: [{ number: "0961-039-7386", area: "Davao" }],
+    address: "2nd Floor, Lucita Building, P. Sobrecarey St corner Lapu-Lapu St, Davao City, 8000",
   },
   copyright: "© 2026 U&I Global. All rights reserved.",
   privacyHref: "#",
