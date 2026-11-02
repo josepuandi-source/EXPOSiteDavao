@@ -48,9 +48,9 @@ export const nav = {
   mobile: [
     { label: "Why Attend", href: "#why-attend" },
     { label: "Schedule", href: "#dates" },
-    { label: "Register", href: "#register" },
+    { label: "Register Now", href: "#register" },
   ],
-  cta: { label: "Register for Free", href: "#register" },
+  cta: { label: "Register Now", href: "#register" },
 };
 
 // ---------------------------------------------------------------------------
@@ -95,7 +95,7 @@ export const hero = {
   intro:
     "Join us at the 2026 Australia Study & Migration Expo. Free 1-on-1 consultations with University, TAFE, and College representatives and migration experts.",
   cities_line: "Davao City · 5 December 2026",
-  primaryCta: { label: "Claim Your Free Ticket", href: forms.english },
+  primaryCta: { label: "Register Now", href: forms.english },
   secondaryCta: { label: "Learn More", href: "#why-attend" },
   /** Language registration buttons under the hero. hoverText = "navy" | "teal". */
   /** Extra per-language register buttons under the hero (none on this single-language site). */
@@ -218,7 +218,7 @@ export const whyAttend = {
   promo: {
     title: "TAFEs and leading Australian institutions are all coming, with plenty to choose from!",
     text: "Special offers and great-value promotions, only at the EXPO!",
-    cta: "Register free",
+    cta: "Register Now",
     tagline: "Planning to go to Australia in 2027? Don't miss this one.",
   },
 };
@@ -291,7 +291,7 @@ export const specials = {
     "*Conditions as set by the company.",
     "*The first 29 guests to check in receive an Australian souvenir (celebrating 29 years of U&I Global).",
   ],
-  cta: "Register free",
+  cta: "Register Now",
 };
 
 // ---------------------------------------------------------------------------
@@ -774,7 +774,7 @@ export const footer = {
   links: [
     { label: "Why Attend", href: "#why-attend" },
     { label: "Schedule", href: "#dates" },
-    { label: "Register", href: "#register" },
+    { label: "Register Now", href: "#register" },
   ],
   contact: {
     email: "information@uandiedu.com",
