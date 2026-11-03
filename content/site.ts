@@ -302,8 +302,12 @@ export const specials = {
 export const specialists = {
   title: "Free consultation with our specialists",
   subtitle: "Meet the U&I team who will look after you at the Davao EXPO.",
-  /** Shown on each card as the call to book through LINE. */
-  bookLabel: "Book via LINE",
+  /** Shown on each card as the call to book. */
+  bookLabel: "Book a consultation",
+  /** Which booking button the cards show: "line" or "facebook". */
+  bookVia: "facebook" as "line" | "facebook",
+  /** Shown (greyed out) on a card whose link isn't ready yet. */
+  bookingSoonLabel: "Booking link coming soon" as string | undefined,
   /** Desktop layout: cards per row, and start a new row after these cards (0-based). */
   perRow: 3 as 3 | 4,
   breakAfter: [2] as number[],
@@ -311,7 +315,7 @@ export const specialists = {
   photoSoon: "Photo coming soon" as string | undefined,
   /**
    * Philippines team on the top row, Australia offices below.
-   * line: a branch LINE account the card opens (none for Davao).
+   * link: the specialist's Facebook, opened to book a consultation. bookingSoon: show the button greyed out until it's ready.
    * background: optional photo of their city, shown soft and blurred behind the cut-out.
    * points: leave empty until their specialisations are confirmed.
    */
@@ -319,23 +323,27 @@ export const specialists = {
     {
       name: "Lillian",
       photo: "/images/specialists/ph/lillian-photo.png",
+      link: "https://www.facebook.com/profile.php?id=61578799293848",
       branch: "Davao office",
       points: ["8 years of experience", "Study plans for Australia", "Full support from application to visa"],
     },
     {
       name: "Suzzy",
       photo: "/images/specialists/ph/suzzy-photo.png",
+      link: "https://www.facebook.com/profile.php?id=61590555390155",
       branch: "Cagayan de Oro office",
       points: ["TAFE and nursing specialist", "Scholarships and degree specialist"],
     },
     {
       name: "Cebu Specialist",
+      bookingSoon: true,
       branch: "Cebu office",
       points: [],
     },
     {
       name: "Gaselle",
       photo: "/images/specialists/ph/gaselle-clear.png",
+      link: "https://www.facebook.com/gaselle.uandi",
       background: "/images/specialists/bg/brisbane-soft.webp",
       branch: "Brisbane & Gold Coast office",
       points: [],
@@ -343,17 +351,19 @@ export const specialists = {
     {
       name: "Jose",
       photo: "/images/specialists/ph/jose-clear.png",
+      link: "https://www.facebook.com/jose.uandi/",
       background: "/images/specialists/bg/goldcoast-soft.webp",
       branch: "Brisbane & Gold Coast office",
       points: [],
     },
     {
       name: "Thea",
+      link: "https://www.facebook.com/profile.php?id=61594543236091",
       background: "/images/specialists/bg/melbourne-soft.webp",
       branch: "Melbourne office",
       points: [],
     },
-  ] as { name: string; photo?: string; line?: string; branch: string; points: string[]; background?: string }[],
+  ] as { name: string; photo?: string; link?: string; bookingSoon?: boolean; branch: string; points: string[]; background?: string }[],
 };
 
 // ---------------------------------------------------------------------------
