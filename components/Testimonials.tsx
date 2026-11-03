@@ -163,7 +163,8 @@ export default function Testimonials() {
   const { testimonials } = useContent();
   const { tabs, grants, study } = testimonials;
   const [tab, setTab] = useState<Tab>("reviews");
-  const order: Tab[] = ["reviews", "grants", "study"];
+  // A tab whose images are switched off in the content is left out
+  const order = (["reviews", "grants", "study"] as Tab[]).filter((t) => t !== "study" || study);
   return (
     <section id="reviews" className="overflow-hidden py-20 md:py-[88px]">
       <Container>
@@ -192,7 +193,7 @@ export default function Testimonials() {
             {tab === "grants" && (
               <PosterCarousel key="grants" slides={grants.images.map((src) => ({ src, alt: grants.alt }))} width={1080} height={1350} />
             )}
-            {tab === "study" && (
+            {tab === "study" && study && (
               <PosterCarousel key="study" slides={study.images.map((src) => ({ src, alt: study.alt }))} width={1080} height={1080} />
             )}
           </div>

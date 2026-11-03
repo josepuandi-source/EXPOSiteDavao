@@ -510,8 +510,8 @@ export const testimonials = {
   tabs: { reviews: "Student reviews", grants: "Visa grants", study: "Study experiences" },
   /** Visa grant posts (placeholder: from the U&I Thailand page), newest first. */
   grants: { alt: "Visa granted", images: ["/images/grants/grant-01.webp", "/images/grants/grant-02.webp", "/images/grants/grant-03.webp", "/images/grants/grant-04.webp", "/images/grants/grant-05.webp", "/images/grants/grant-07.webp", "/images/grants/grant-08.webp", "/images/grants/grant-09.webp", "/images/grants/grant-10.webp", "/images/grants/grant-11.webp", "/images/grants/grant-12.webp", "/images/grants/grant-13.webp", "/images/grants/grant-14.webp", "/images/grants/grant-15.webp"] },
-  /** Students reviewing their schools. */
-  study: { alt: "Student study experience review", images: ["/images/study/greenwich.webp", "/images/study/greenwich-2.webp", "/images/study/greenwich-3.webp", "/images/study/ilsc.webp", "/images/study/ilsc-2.webp", "/images/study/qat.webp", "/images/study/qat-2.webp", "/images/study/qat-3.webp", "/images/study/griffith.webp", "/images/study/kaplan.webp", "/images/study/langports.webp", "/images/study/ep.webp", "/images/study/amca.webp", "/images/study/mcca.webp", "/images/study/impact.webp", "/images/study/oreang.webp"] },
+  /** Students reviewing their schools (hidden for now; set { alt, images } to bring the tab back). */
+  study: null as null | { alt: string; images: string[] },
   /**
    * Student reviews: Google reviews of U&I Global Australia Philippines, in the students' own words.
    * No photos yet, so each card shows the student's initial; add `photo` as they come in.
