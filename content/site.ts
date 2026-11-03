@@ -587,7 +587,7 @@ export const testimonials = {
       name: "Ronabel Albano",
       service: "Visa application",
       consultant: "Jose",
-      quote: "I would like to express my heartfelt gratitude to Sir Jose of U&I Global for his unwavering support and guidance throughout my visa application journey. From the very beginning, he patiently answered all my questions and guided me step by step…",
+      quote: "I would like to express my heartfelt gratitude to Sir Jose of U&I Global for his unwavering support and guidance throughout my visa application journey. From the very beginning, he patiently answered all my questions and guided me step by step with so much care and professionalism. His encouragement made the whole process feel lighter and gave me confidence along the way. I truly appreciate his dedication and kindness. Thank you so much, Sir Jose! I’m definitely looking forward to working with him again on my next visa journey. Godbless!!!",
     },
     {
       name: "Gherwin Agbayani",
