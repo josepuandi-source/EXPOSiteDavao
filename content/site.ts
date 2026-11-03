@@ -505,7 +505,7 @@ export const move = {
 // ---------------------------------------------------------------------------
 export const testimonials = {
   title: "What Our Students Say",
-  subtitle: "Real reviews from students U&I has helped.",
+  subtitle: "Real Google reviews from students U&I has helped.",
   labels: { service: "Service", consultant: "Consultant", course: "Course", school: "School", readMore: "Read more", source: "Review", showMore: "See more reviews", showLess: "Show fewer reviews", close: "Close" },
   tabs: { reviews: "Student reviews", grants: "Visa grants", study: "Study experiences" },
   /** Visa grant posts (placeholder: from the U&I Thailand page), newest first. */
@@ -513,189 +513,96 @@ export const testimonials = {
   /** Students reviewing their schools. */
   study: { alt: "Student study experience review", images: ["/images/study/greenwich.webp", "/images/study/greenwich-2.webp", "/images/study/greenwich-3.webp", "/images/study/ilsc.webp", "/images/study/ilsc-2.webp", "/images/study/qat.webp", "/images/study/qat-2.webp", "/images/study/qat-3.webp", "/images/study/griffith.webp", "/images/study/kaplan.webp", "/images/study/langports.webp", "/images/study/ep.webp", "/images/study/amca.webp", "/images/study/mcca.webp", "/images/study/impact.webp", "/images/study/oreang.webp"] },
   /**
-   * Student reviews (placeholder): from the EXPO review sheet and the U&I Global Australia Thailand Facebook page.
-   * Quotes are kept in the student's own words, so they are not translated.
+   * Student reviews: Google reviews of U&I Global Australia Philippines, in the students' own words.
+   * No photos yet, so each card shows the student's initial; add `photo` as they come in.
    */
   items: [
     {
-      name: "Potea",
-      photo: "/images/reviews/student-potea.webp",
-      course: "Certificate IV in Kitchen Management, Diploma & Advanced Diploma of Hospitality Management",
-      school: "TAFE QLD / SBTA & SELA",
-      quote:
-        "ทาง U&I พี่ๆให้บริการและคำแนะนำที่ดีมากและใจดีมาก โดยส่วนตัวแล้วปรึกษาข้อมูลกับทางพี่ที ที่มาดูแลในส่วนข้อมูลต่างๆ พี่ทีคอยให้แนะนำที่เหมาะสมและใส่ใจรายละเอียดต่างๆดีมากครับ ขอบคุณทางบริษัทและทางพี่ทีที่ใส่ใจนักเรียนดีมากครับ ไม่ผิดหวังเลยจริงๆครับ",
-    },
-    {
-      name: "Saipan Duangkamon",
-      photo: "/images/reviews/student-saipan-v3.webp",
-      course: "General English",
-      school: "QAT",
-      quote:
-        "เราเรียนภาษาอังกฤษที่สถาบัน QAT โดยสมัครผ่าน U&I Global เลยอยากมาแชร์ประสบการณ์จริง เผื่อใครกำลังตัดสินใจอยู่ค่ะ ส่วนตัวประทับใจ agent มาก เอเจ้นท์ที่ดูแลเราชื่อพี่ทีทีค่ะ ช่วยจัดการเอกสารเรียนให้ทั้งหมด มีอธิบายขั้นตอนชัดเจน ไม่มีค่าใช้จ่ายเพิ่มจากที่แจ้งไว้เลย 😊\n\nโรงเรียนสอนค่อนข้างสบายๆ ครูเป็นเจ้าของภาษา อธิบายเข้าใจง่าย ห้องเรียนไม่ใหญ่มาก เพื่อนในคลาสหลากหลาย ทำให้มีโอกาสพูดเยอะ โรงเรียนนี้ agent เป็นคนแนะนำ ซึ่งตรงกับเป้าหมายเรา ✅\n\nโดยรวมแนะนำสำหรับคนที่อยากเรียนภาษาแบบค่อยเป็นค่อยไป หรือถ้าใครถือ WAH แล้วอยากลองเรียนก่อนเปลี่ยนวีซ่านักเรียนแบบเราก็ได้ และต้องการ agent ที่ดูแลใกล้ชิดแนะนำเลยค่ะ 🤩",
-    },
-    {
-      name: "BB",
-      photo: "/images/reviews/student-bb.webp",
-      course: "General English + IELTS Preparation",
-      school: "ILSC",
-      quote:
-        "พี่ทีที ให้คำปรึกษาดีมาก☺️ มีตัวเลือกโรงเรียนให้เยอะมากค่ะ เอกสารก็เตรียมง่ายไม่วุ่นวายเลยค่ะ ไม่เครียดเลยเพราะว่าพี่เค้าจัดการให้หมด เราแค่มีหน้าที่เตรียมเอกสารและเลือกโรงเรียนที่เราอยากจะเรียน แล้วผลวีซ่าออกไวมากมากๆ🎉✨ ไม่มีการเรียกเอกสารเพิ่มเติมเลยค่ะ วีซ่าออกหลังจากยื่นขอแค่ 10 นาที ขอบคุณพี่ทีมากๆเลยค่ะ🙏💖✨",
-    },
-    {
-      name: "GG",
-      photo: "/images/reviews/student-gg.webp",
-      course: "Diploma of Health Science (Nursing), Master of Nursing",
-      school: "QUT",
-      quote:
-        "เลือกต่อวีซ่ากับ U&I ไม่ผิดหวัง วีซ่าผ่านหลังตรวจสุขภาพเสร็จ ต้องยกให้พี่ทีเลย ขอบคุณนะคะ แนะนำทุกคนให้ติดตามกิจกรรมตามเพจ บางทีมีส่วนลดวีซ่าอีกด้วย ดีมากก🥹",
-    },
-    {
-      name: "Fahsai",
-      photo: "/images/reviews/student-fahsai-v2.webp",
-      course: "Master of Digital Communication",
-      school: "QUT",
-      quote:
-        "ชอบบริการของ U&I ตรงที่รับเรื่องไวค่ะ พี่เอเจนท์บริการดีมากกๆ ส่วนตัวเจอขั้นตอนลำบากนิดนึง แต่ได้พี่ๆช่วยตามเรื่องให้ค่อนข้างเร็วเลยค่ะ ของเราเป็นพี่เอเจนท์ชื่อพี่ทีค่ะ น่ารักมากๆ 👍🏻",
-    },
-    {
-      name: "Kelly",
-      photo: "/images/reviews/student-kelly.webp",
-      course: "Bachelor of Psychological Science",
-      school: "Griffith University",
-      quote:
-        "ขอบคุณพี่ๆที่ช่วยดำเนินการครับ เพื่อน ๆ ในคลาสมีหลายสัญชาติ ตอนแรกคิดว่าจะมีแต่นักเรียนต่างชาติ แต่จริง ๆ แล้วมีนักเรียนออสเตรเลียเยอะ ตอนแลกเปลี่ยนไอเดียสนุก และทำงานกลุ่มก็ง่ายขึ้น รู้สึกคิดถูกที่เรียนที่ต่างประเทศ เพราะชื่อเสียงของมหาวิทยาลัย คิดว่าจะเป็นผลดีในอนาคตครับ",
-    },
-    {
-      name: "Ginny",
-      photo: "/images/reviews/student-ginny.webp",
-      course: "General English",
-      school: "Greenwich College",
-      quote:
-        "Super grateful to U&I Global Brisbane, my visa just got approved! Big thanks to P'Tee for helping me through the whole process. She was so friendly, patient, and always there when I had questions. Made everything way less stressful. Really appreciate all the support from the team too. Highly recommend them if you're sorting out your visa!",
-    },
-    {
-      name: "Kamonrat Boonchuen",
-      photo: "/images/reviews/student-kamonrat.webp",
-      course: "Master of Accounting",
-      school: "Kaplan Business School",
-      quote:
-        "A huge thank you to N'Mookie and the U&I team! 💖 Mookie was super detailed and supportive with all the documents, making everything so easy for me. We submitted the application yesterday, and it got auto-granted today! 🎉 I'm so happy I chose this team — friendly, professional, and truly amazing at what they do. Highly recommended!",
-    },
-    {
-      name: "Sunkiss",
-      photo: "/images/reviews/student-sunkiss.webp",
-      course: "General English, Advanced Diploma in Civil Construction and Design",
-      school: "IH-ALS",
-      quote: "ขอบคุณ U&I ที่แนะนำและช่วยเหลืออย่างดีในความฝัน เข้าสู่การเรียน ออสเตรเลีย",
-    },
-    {
-      name: "Pear",
-      photo: "/images/reviews/student-pear.webp",
-      review: "/images/reviews/review-pear.webp",
-      course: "General English",
-      school: "Impact English College, Melbourne",
-      quote:
-        "เป็นการตัดสินใจที่ถูกมากๆๆๆที่ไปเรียนค่ะ ได้เพื่อนใหม่เยอะมากๆๆ คลาสเรียนดี อาจารย์ดี เพื่อนดี ไปเรียนเหมือนไปเที่ยว เลิกเรียนไปกับเพื่อนๆ เสาร์อาทิตย์ก็ได้ไปเที่ยวด้วย คิดว่าใช้เวลาได้คุ้มมากๆเลยค่ะ",
-    },
-    {
-      name: "Beam",
-      photo: "/images/reviews/student-beam.webp",
-      review: "/images/reviews/review-beam.webp",
-      course: "General English",
-      school: "Impact English College, Melbourne",
-      quote:
-        "พอรู้สึกว่าเรียนหนึ่งเดือนมันน้อยไปเลยค่ะ อยากกลับมาเรียนต่ออีก😅 ครูก็ใจดีค่ะ แต่พอเห็นเพื่อนๆทุกคนพูดได้อ่านได้หนูก็เขินๆที่ยังอ่านไม่ออก เพื่อนๆก็พยายามช่วย เดี๋ยวเรียนไปสักพักคงจะดีขึ้นค่ะ จบคราวเมื่อวานเค้าก็เรียกคุยบอกหนูไม่ต้องเครียดเพราะพึ่งมา แต่ก็เครียดอยู่ดี555 อาจจะเป็นเพราะว่าไม่ได้เรียนนานแล้ว เหมือนมาเริ่มจูนกับตัวเองใหม่🤣🤣",
-    },
-    {
-      name: "Sand",
-      photo: "/images/reviews/student-sand.webp",
-      review: "/images/reviews/review-sand.webp",
-      course: "Bachelor of Social Science",
-      school: "The University of Queensland",
-      quote:
-        "แซนว่า UQ เป็นมหาลัยที่เหมาะสมกับชื่อเสียง ตัวสถานที่และ facility ดีมาก ส่วนตัวชอบระบบการเรียนและอาจารย์ที่สอนมากกว่าที่ไทย ตัวเมืองเองก็ดี ความปลอดภัยประมาณ 8/10 อาหารอร่อยแต่แพง คำว่าแพงจะถูกใช้บ่อยเวลามาที่นี่ คนส่วนใหญ่เน้นออกกำลังกายตอนเช้า แล้วเที่ยวตอนเย็น ภาพรวมเป็นเมืองที่น่ามาเรียน แนะนำให้มาลองครับ😁",
-    },
-    {
-      name: "นิกกี้",
-      photo: "/images/reviews/student-7-v2.webp",
-      review: "/images/reviews/review-7.webp",
-      service: "Visa extension",
-      consultant: "P'Ploy & P'Greenie",
-      quote:
-        "ขอบคุณพี่พลอย กับ พี่กรีนนี่ ที่ดูแลการต่อวีซ่าครั้งนี้ค่ะ คิดว่าอาจจะไม่ผ่าน เพราะโดนขอเอกสารเพิ่ม เครียดมาก แต่ผลออกมาผ่าน โล่งใจมากค่ะ ขอบคุณพี่พลอยที่บอกให้สู้ก่อน อย่าพึ่งยอมแพ้ แล้วก็คอยช่วยตามเอกสาร แล้วก็ดูแลนิกมาตลอด ขอบคุณมากค่ะ",
-    },
-    {
-      name: "U&I Student",
-      photo: "/images/reviews/student-8.webp",
-      review: "/images/reviews/review-8.webp",
-      service: "Student visa",
-      consultant: "P'Ploy",
-      quote:
-        "พี่พลอยดูแลดีมากก เอาใจใส่ ตอบเร็ว ตอบทุกคำถาม คอยให้คำปรึกษาปัญหาต่างๆและหาวิธีที่ทำให้วีซ่ามีเปอร์เซ็นต์ผ่านสูง ยื่น 1 สัปดาห์ granted แล้วค่า ดีใจมากๆ รู้สึกดีใจมากๆค่ะที่ตัดสินใจมาทำกับพี่พลอย ❤️",
-    },
-    {
-      name: "Sarocha Wansuk",
-      photo: "/images/reviews/student-9.webp",
-      review: "/images/reviews/review-9.webp",
-      service: "Visa change",
-      consultant: "P'Ploy",
-      quote:
-        "Today I met P'Ploy. She is nice and very kind to me, she gave me information about changing my visa. Before, I was worried, but now she has made me feel not nervous anymore 🥰",
-    },
-    {
-      name: "Few",
-      photo: "/images/reviews/student-10.webp",
-      review: "/images/reviews/review-10.webp",
+      name: "Babylou Camilo",
       service: "Visa application",
-      consultant: "P'Ploy",
-      quote:
-        "ขอบคุณพี่พลอยมากๆค่ะ ที่ดูแลช่วยเหลือเรื่องเอกสารต่างๆและให้คำปรึกษาที่ดีมากๆ ตอนแรกกังวลกลัวว่าจะไม่ผ่าน แต่การเตรียมตัวและเอกสารของพี่พลอยชัดเจนและครบถ้วนเลย หลังจากส่งเอกสารให้สถานทูตแล้วไปตรวจสุขภาพวีซ่าก็แกรนท์เที่ยงคืนนั้นเลยค่ะ 🥇",
+      consultant: "Gaselle",
+      quote: "A huge thank you to U&I Global Australia Philippines, especially Gaselle, for making my visa journey so much easier. My application was lodged at the last minute, and it was a risky case because some supporting documents were still pending. Despite the challenges, Gaselle handled everything with professionalism, patience, and genuine care.\nI was beyond grateful when my visa was approved in just 10 days! Thank you for believing in my case and guiding me every step of the way. I highly recommend U&I Global Australia Philippines to anyone looking for reliable and dedicated migration support. 🙌✨",
     },
     {
-      name: "Puyfhay Maneekarn",
-      quote:
-        "ประทับใจ U&I มากค่ะ โดยเฉพาะคุณมุก ได้รับคำปรึกษาที่ละเอียดชัดเจนตรงไปตรงมา ช่วยเหลือทุกด้านที่กังวลเลย ทำให้วีซ่าเราผ่านแบบ auto granted แนะนำต่ออีกแน่นอนค่าา🫶🏼",
+      name: "Mary Joy Pagaran",
+      service: "Student visa",
+      consultant: "Jose",
+      quote: "I had a great experience with U&I Agency for my student visa application. They made the entire process incredibly easy and stress-free. My agent, Jose, was fantastic—he was efficient, professional, and everything went through without any issues. The whole experience was fast and smooth. Thank you, U&I and Jose, for your great work!",
     },
     {
-      name: "Nareedon Inkaew",
-      quote:
-        "ทีมนี้ให้คำแนะนำดีมากๆ ล้านตัวค่ะ ไม่ทิ้ง ไม่เท ไม่หาย ไม่เข้าใจตรงไหนให้คำปรึกษาดีมากค่ะ พูดเพราะ เหมือนคนในครอบครัว ขอแค่เปิดใจคุยกับทีม มีอะไรให้พูดให้บอกตรงๆนะคะ ขอบคุณทีมงานทุกๆคนนะคะ เลิฟฟ🫶🏻💖",
+      name: "Heaven Sabbyna",
+      service: "Visa application",
+      consultant: "Gaselle",
+      quote: "A very special thank you to Miss Gaselle for her patience and support throughout the whole process. She was always easy to reach out to and talk to whenever I had questions or needed guidance. I truly appreciate all the help she gave me every step of the way.\n\nImagine, I got it in only 3 weeks!\n\nIf you are looking for a visa agent, Miss Gaselle and U&I Philippines is definitely the place to go. Highly recommended! ⭐",
     },
     {
-      name: "Bobbie",
-      quote:
-        "พี่มุกดูแลดีมากกก ให้คำแนะนำเรื่องการเตรียมเอกสารต่างๆ ได้ดีและละเอียดมากค่ะ ประทับใจมาก ตอนแรกแอบกังวลว่าวีซ่าจะผ่านมั้ย สรุปได้ auto granted ต้องขอบคุณพี่มุกมากๆเลยนะคะ🫶🏻💕\n\nปล. ใครกำลังหา agency ไปเรียนออส แนะนำ U&I เลยค่า แล้วจะไม่ผิดหวัง😍",
+      name: "Jasper Visitacion",
+      service: "Student visa and school application",
+      consultant: "Jose",
+      quote: "I had an excellent experience with Jose UandI from U&I Global Brisbane. He was professional, knowledgeable, and very helpful throughout my student visa and school application process. I really appreciated his guidance and support every step of the way. Highly recommended!",
     },
     {
-      name: "Saisuda Pamaungmoon",
-      quote:
-        "ขอบคุณพี่อิ๋วและทีมงานเอเจ้นซี่ทุกคนมากนะคะ ที่คอยดูแลและให้คำแนะนำตั้งแต่การเลือกเมือง การเตรียมเอกสาร ไปจนถึงการยื่นวีซ่า รวมถึงตอบทุกข้อสงสัยและให้คำปรึกษาในทุกขั้นตอน จนวันนี้วีซ่าผ่านเรียบร้อยแล้ว 😊\n\nประทับใจในการดูแลและความใส่ใจของทีมงานมากค่ะ แนะนำเลยสำหรับใครที่กำลังมองหาเอเจ้นซี่ดี ๆ ขอบคุณอีกครั้งนะคะ 🙏",
+      name: "Tabbuac Genne",
+      service: "Visa application",
+      consultant: "Feb and Gaselle",
+      quote: "My visa was lodged on 12 March and approved in just 9 days!\n\nI cannot thank Ms. Feb Franzene Barrios and Ms. Gaselle at U & I Global enough for their incredible support. From my very first inquiry all the way through to the final processing, they were with me every step of the way.\n\nWhat really set them apart was their empathy. They weren't just processing paperwork; they were always there to listen to all the \"drama\" and anxieties that come with visa applications. They handled my endless questions with so much patience and professionalism that our conversations often turned from stressful inquiries into ease and laughter.\n\nHighly recommended!! If you are looking for a team that is efficient, supportive, and genuinely invested in your success, look no further than Feb and Gaselle. They made a daunting process feel like a breeze!",
     },
     {
-      name: "Win",
-      course: "English program + Master of Professional Engineering",
-      school: "Monash College + Monash University",
-      quote:
-        "บรรยากาศดีมากครับ ทั้งแคมปัส Caulfield และ Clayton เลย Australia เค้าทำอะไรๆ มักจะเซ็ทเป็นระบบไว้หมด เว็บ/Moodle/ไดร์ฟ ที่ใช้ในการเรียน มีฟังก์ชั่นที่ต้องใช้ค่อนข้างเยอะ พยายามเรียนรู้และจดจำอยู่ครับ ตื่นเต้น แล้วก็เกร็งๆ นิดหน่อยครับ",
+      name: "Joash Galario",
+      service: "Student visa",
+      consultant: "Jose",
+      quote: "I had a really good experience with U&I Global during my student visa application. Jose was very approachable, helpful, and easy to talk to. He guided me through every step, answered my questions clearly, and made the whole process much less stressful. I’m very grateful for all the support and assistance. Thank you so much!!!",
     },
     {
-      name: "Dung",
-      course: "English program + Master of Professional Engineering",
-      school: "Curtin College + Curtin University",
-      quote: "ขอบคุณพี่มุกมากๆนะคับ ถ้าไม่มีพี่มุกผมน่าจะตื้อไปหมดเลย😂",
+      name: "Johanna Charisse Maranon",
+      service: "Student visa",
+      consultant: "Gaselle",
+      quote: "A Rare, Genuine Gem 💎\n\nBack in 2023, I was just one of the many fresh international students—lost, unsure, and trying to find my place. When a friend invited me to a Study Expo by U&I, I said yes without even knowing how much I would need that moment later on.\n\nThat’s where I met Ma’am Gasselle—a petite, warm, and genuinely kind lady my friend introduced me to. Life surprised me with challenges that pushed me to my limits, and when I finally needed help from an education agent, the only name that came to mind was U&I… and Ma’am Gasselle.\n\nFrom having absolutely no clue about anything, she guided me through every step with patience and care. We went through many ups and downs during my visa process, yet not once did I doubt that she truly cares for the students she helps. She puts her heart into her work, and it shows in every conversation, every reminder, every effort she gives.\n\nIt is rare to find an agent who is truly genuine.\nAnd I feel blessed to have found one.\n\nHeartfelt. Practical. Reliable.\nThank you, Ma’am Gasselle, for everything.",
     },
     {
-      name: "Mind",
-      course: "Cert IV + Diploma of Hospitality Management",
-      school: "QAT, Brisbane",
-      quote:
-        "ขอบคุณพี่ไอรีนที่ช่วยดูแลเรื่องวีซ่า เพราะกำลังจะเปลี่ยน Work and Holiday ปีที่ 3 เป็นนักเรียน เลยค่อนข้างกังวล แต่ก็วีซ่าผ่านแล้วว ส่วนโรงเรียน เริ่มเรียนแล้วค่ะ เรียนแบบเข้มข้นจริงๆ ได้เข้าครัวแบบปฏิบัติจริงเลย",
+      name: "Denise Valenzuela",
+      service: "Visa application",
+      consultant: "Jose",
+      quote: "I feel incredibly fortunate to have had my visa application handled by Mr. Jose Palileo at U&I Migration. My case was quite complex, but Mr. Jose managed it with impressive efficiency, professionalism, and attention to detail. He kept the process smooth and clear every step of the way.\n\nTo my surprise and relief, my visa was approved, and I truly believe his expertise made all the difference. I highly recommend U&I Migration and Mr. Jose to anyone seeking reliable and knowledgeable assistance with their visa application.",
     },
     {
-      name: "Meen",
-      course: "Barista (2 weeks)",
-      school: "Lexis, Brisbane",
-      quote: "เรียนสนุกดีค่ะ ได้เพื่อนใหม่ และได้ฝึกทำกาแฟเยอะกว่าที่คิดไว้เยอะเลย",
+      name: "Jade Dondoyano",
+      service: "Visa application",
+      consultant: "Gaselle and Jose",
+      quote: "My sincere appreciation goes to the U and I Team for their remarkable service and assistance with my visa application.\n\nTheir dedication and expertise made a big difference in achieving a successful outcome. The team was responsive, supportive, and professional throughout the entire process.\n\nThank you for your valuable help and for making this journey much easier and more manageable.\n\nSalamat Miss Gaselle and Sir Jose din 🤗💕",
+    },
+    {
+      name: "Sereño Jaimee Kaye",
+      service: "Student visa",
+      consultant: "Dee Jay and Gaselle",
+      quote: "Hello and Good day everyone!\n\nI would like to extend my deepest gratitude to U and I Global for their exceptional assistance in processing my student visa. A special thank you to Ate Dee Jay and Ate Gaselle for their outstanding support they were incredibly approachable, understanding, and patient throughout every step of the process.\n\nTheir professionalism and dedication made the entire experience smooth and stress-free. If you are searching for a reliable and trustworthy agency, I highly recommend U and I Global for their excellent service and commitment to helping their clients succeed.\n\nI’m truly thankful my visa has been approved!\n\nMaraming Salamat po☺️",
+    },
+    {
+      name: "Arianne Grace Luna",
+      service: "Student visa",
+      consultant: "Jouana",
+      quote: "Thank you U&I and kudos to Miss Jouana! Miss Jouana is the best! She provides excellent guidance and support throughout the process. Her approachability, kindness, and expertise in sharing information about potential courses for a student visa were truly invaluable. She also handled everything with such ease and speed. Five stars isn't enough - I'd give her ten stars if I could! 🥰💕",
+    },
+    {
+      name: "Ronabel Albano",
+      service: "Visa application",
+      consultant: "Jose",
+      quote: "I would like to express my heartfelt gratitude to Sir Jose of U&I Global for his unwavering support and guidance throughout my visa application journey. From the very beginning, he patiently answered all my questions and guided me step by step…",
+    },
+    {
+      name: "Gherwin Agbayani",
+      service: "Visa application",
+      quote: "I would like to express my sincere appreciation to the U and I Team for their outstanding support throughout my visa processing and approval journey.\nFrom the very beginning, they were professional, responsive, and incredibly knowledgeable. The entire process, which can often feel overwhelming and stressful, was handled with such care and efficiency that it gave me complete peace of mind. Every question I had was answered promptly, and they guided me step by step, ensuring that all requirements were met without confusion or delay.\nWhat truly stood out was their dedication and attention to detail. They went above and beyond to make sure everything was in order, and their expertise played a huge role in the successful outcome of my application.\nI am genuinely grateful for their support and would highly recommend their services to anyone seeking reliable and trustworthy visa assistance. Thank you once again for making this important milestone possible!",
+    },
+    {
+      name: "Shermain Aguinaldo",
+      service: "Visa application",
+      quote: "Thank you, U&I, for your excellent service and unwavering support throughout my visa application. Your professionalism, patience, and guidance made the entire process much smoother. I’m beyond grateful to finally receive my visa grant. Thank you for being part of this milestone—highly recommended! 🤍✨",
+    },
+    {
+      name: "Erick Joseph Sarong",
+      service: "Meet and greet event",
+      quote: "It was my first time joining this kind of meet and greet event. It was really nice because you get to meet many different people from other countries, like Koreans and Taiwanese. It’s not just their event they also include a tour. Wow, I was really impressed! Thank you so much, U and I Global. Highly recommended ❤️❤️❤️❤️❤️",
     },
   ] as {
     name: string;

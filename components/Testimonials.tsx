@@ -112,8 +112,7 @@ function ReviewCards() {
   const [open, setOpen] = useState<Review | null>(null);
   const [all, setAll] = useState(false);
   const close = useCallback(() => setOpen(null), []);
-  // Reviews without a photo stay in the content but are not shown for now.
-  const items = testimonials.items.filter((t) => t.photo);
+  const items = testimonials.items;
   const shown = all ? items : items.slice(0, FIRST);
   return (
     <>
