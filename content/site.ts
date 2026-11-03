@@ -580,7 +580,8 @@ export const testimonials = {
     {
       name: "Arianne Grace Luna",
       service: "Student visa",
-      consultant: "Jouana",
+      // Jouana started the case and Gaselle took it over; the quote is kept as written
+      consultant: "Jouana, then Gaselle",
       quote: "Thank you U&I and kudos to Miss Jouana! Miss Jouana is the best! She provides excellent guidance and support throughout the process. Her approachability, kindness, and expertise in sharing information about potential courses for a student visa were truly invaluable. She also handled everything with such ease and speed. Five stars isn't enough - I'd give her ten stars if I could! 🥰💕",
     },
     {
