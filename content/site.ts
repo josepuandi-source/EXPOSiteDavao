@@ -334,7 +334,11 @@ export const specialists = {
       background: "/images/specialists/bg/cdo-soft.jpg",
       link: "https://www.facebook.com/profile.php?id=61590555390155",
       branch: "Cagayan de Oro office",
-      points: ["TAFE and nursing specialist", "Scholarships and degree specialist", "Pre-departure assistance for prospective students to Australia"],
+      points: [
+        "TAFE specialist for Nursing, Trades, Business, and Education",
+        "Exclusive School Scholarship for University courses",
+        "Pre-departure assistance for prospective students to Australia",
+      ],
     },
     {
       name: "Rashell",
