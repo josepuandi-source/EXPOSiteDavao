@@ -323,6 +323,7 @@ export const specialists = {
     {
       name: "Lillian",
       photo: "/images/specialists/ph/lillian-photo.png",
+      background: "/images/specialists/bg/davao-soft.jpg",
       link: "https://www.facebook.com/profile.php?id=61578799293848",
       branch: "Davao office",
       points: ["8 years of experience", "Study plans for Australia", "Full support from application to visa"],
@@ -330,6 +331,7 @@ export const specialists = {
     {
       name: "Suzzy",
       photo: "/images/specialists/ph/suzzy-photo.png",
+      background: "/images/specialists/bg/cdo-soft.jpg",
       link: "https://www.facebook.com/profile.php?id=61590555390155",
       branch: "Cagayan de Oro office",
       points: ["TAFE and nursing specialist", "Scholarships and degree specialist"],
