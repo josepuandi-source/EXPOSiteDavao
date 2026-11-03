@@ -337,7 +337,8 @@ export const specialists = {
       points: ["TAFE and nursing specialist", "Scholarships and degree specialist"],
     },
     {
-      name: "Cebu Specialist",
+      name: "Rashell",
+      background: "/images/specialists/bg/cebu-soft.jpg",
       bookingSoon: true,
       branch: "Cebu office",
       points: [],
