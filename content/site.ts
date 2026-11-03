@@ -490,8 +490,8 @@ export const move = {
   subtitle: "We help you settle in Australia: U&I looks after you all the way through your journey.",
   /** icon: name of an icon in components/icons.tsx (see Move.tsx) */
   items: [
-    { icon: "home", title: "Accommodation Support", text: "Help finding a place to live, from the U&I team in Australia." },
-    { icon: "briefcase", title: "Job Search Support", text: "Where to look for work, plus our partner network and U&I alumni." },
+    { icon: "home", title: "Accommodation Support", text: "U&I Global team in Australia assists students with finding accommodation on arrival." },
+    { icon: "briefcase", title: "Job Search Support", text: "Assistance with job interviews with our partner network and U&I Alumni." },
     { icon: "device", title: "Arrival Assistance", text: "SIM cards, transport cards, opening a bank account and finding places near your home when you land." },
     { icon: "clipboard", title: "TFN / ABN Guidance", text: "Step-by-step help applying for your Tax File Number and Australian Business Number." },
     { icon: "globe", title: "Life in Australia Guidance", text: "Advice on everyday life and the essential services you will need in Australia." },
