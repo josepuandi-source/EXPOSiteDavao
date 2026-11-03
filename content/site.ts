@@ -748,7 +748,7 @@ export const photoStrip = {
 // ---------------------------------------------------------------------------
 export const finalCta = {
   title: "Secure Your Free Spot",
-  subtitle: "Register in seconds. No cost, no obligation.",
+  subtitle: "Instant registration, and a U&I staff member will reach out to you shortly.",
   cta: { label: "Register for Free", href: "#register" },
   /** The monday.com form shown inline; filled in per site in content/i18n.ts. */
   form: { embed: "", url: "", title: "EXPO registration form", fallback: "Form not loading? Open it in a new tab" },

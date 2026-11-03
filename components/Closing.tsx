@@ -24,12 +24,14 @@ export function FinalCta() {
             </h2>
             <p className="mt-3 text-[17px] text-white/90">{finalCta.subtitle}</p>
           </Reveal>
-          <div className="mt-8 w-full max-w-3xl overflow-hidden rounded-3xl bg-white shadow-[0_20px_50px_rgba(0,30,50,.35)]">
+          {/* Sized to monday.com's form card (560px wide): the frame is pulled up and out a little to crop
+              the form page's own photo margin, and tall enough that page one needs no inner scrolling. */}
+          <div className="mt-8 w-full max-w-[560px] overflow-hidden rounded-3xl bg-white shadow-[0_20px_50px_rgba(0,30,50,.35)]">
             <iframe
               src={form.embed}
               title={form.title}
               loading="lazy"
-              className="block h-[1120px] w-full border-0 sm:h-[980px] md:h-[940px]"
+              className="-mx-2 -mt-14 block h-[1124px] w-[calc(100%+16px)] max-w-none border-0 sm:h-[978px]"
             />
           </div>
           <a href={form.url} target="_blank" rel="noopener noreferrer" className="mt-4 text-sm text-white/85 underline underline-offset-4 hover:text-white">
