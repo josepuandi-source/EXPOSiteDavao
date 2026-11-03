@@ -472,12 +472,12 @@ export const about = {
 export const partner = {
   title: "Why do students and parents choose U&I Global Australia?",
   items: [
-    { emoji: "🇦🇺", text: "Headquartered in Australia" },
-    { emoji: "🏢", text: "A properly registered Australian company" },
+    { emoji: "🇦🇺", text: "Head Office based in Australia with branches in the Philippines" },
+    { emoji: "🏢", text: "Registered Australian company operating for nearly 30 years" },
     { emoji: "🎓", text: "An officially accredited education agent for universities, TAFEs and Education Queensland International (EQI) institutions" },
     { emoji: "⭐", text: "Almost 30 years, since 1997, looking after students from around the world coming to Australia" },
-    { emoji: "💚", text: "We look after you from the Philippines all the way to Australia" },
-    { emoji: "🤝", text: "Free study consultations, with no processing fees" },
+    { emoji: "✈️", text: "Looking after students in their study journey from the Philippines all the way to Australia" },
+    { emoji: "🤝", text: "Free study consultations with our specialised team" },
   ],
 };
 
