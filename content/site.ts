@@ -326,7 +326,7 @@ export const specialists = {
       background: "/images/specialists/bg/davao-soft.jpg",
       link: "https://www.facebook.com/profile.php?id=61578799293848",
       branch: "Davao office",
-      points: ["8 years of experience", "Study plans for Australia", "Full support from application to visa"],
+      points: ["8 years of experience", "Study plans for various backgrounds including health, education and business", "Full support from application to visa"],
     },
     {
       name: "Suzzy",
