@@ -349,7 +349,11 @@ export const specialists = {
       link: "https://www.facebook.com/gaselle.uandi",
       background: "/images/specialists/bg/brisbane-soft.webp",
       branch: "Brisbane & Gold Coast office",
-      points: [],
+      points: [
+        "Education and Engineering Course Specialist",
+        "Pathway guidance from vocational to university degree courses",
+        "Free consultations for study pathway plans for Undergraduate and Postgraduate studies",
+      ],
     },
     {
       name: "Jose",
@@ -357,7 +361,11 @@ export const specialists = {
       link: "https://www.facebook.com/jose.uandi/",
       background: "/images/specialists/bg/goldcoast-soft.webp",
       branch: "Brisbane & Gold Coast office",
-      points: [],
+      points: [
+        "University Business and Health Care Course Specialist",
+        "Experience with Graduate Visa",
+        "Trusted assistance with course selection and visa application",
+      ],
     },
     {
       name: "Thea",
