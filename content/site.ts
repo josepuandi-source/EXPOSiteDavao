@@ -546,6 +546,7 @@ export const testimonials = {
     },
     {
       name: "Tabbuac Genne",
+      photo: "/images/reviews/ph/genellene.jpg",
       service: "Visa application",
       consultant: "Feb and Gaselle",
       quote: "My visa was lodged on 12 March and approved in just 9 days!\n\nI cannot thank Ms. Feb Franzene Barrios and Ms. Gaselle at U & I Global enough for their incredible support. From my very first inquiry all the way through to the final processing, they were with me every step of the way.\n\nWhat really set them apart was their empathy. They weren't just processing paperwork; they were always there to listen to all the \"drama\" and anxieties that come with visa applications. They handled my endless questions with so much patience and professionalism that our conversations often turned from stressful inquiries into ease and laughter.\n\nHighly recommended!! If you are looking for a team that is efficient, supportive, and genuinely invested in your success, look no further than Feb and Gaselle. They made a daunting process feel like a breeze!",
@@ -590,6 +591,7 @@ export const testimonials = {
     },
     {
       name: "Ronabel Albano",
+      photo: "/images/reviews/ph/ronabel.jpg",
       service: "Visa application",
       consultant: "Jose",
       quote: "I would like to express my heartfelt gratitude to Sir Jose of U&I Global for his unwavering support and guidance throughout my visa application journey. From the very beginning, he patiently answered all my questions and guided me step by step with so much care and professionalism. His encouragement made the whole process feel lighter and gave me confidence along the way. I truly appreciate his dedication and kindness. Thank you so much, Sir Jose! I’m definitely looking forward to working with him again on my next visa journey. Godbless!!!",
@@ -601,6 +603,7 @@ export const testimonials = {
     },
     {
       name: "Shermain Aguinaldo",
+      photo: "/images/reviews/ph/shermain.jpg",
       service: "Visa application",
       quote: "Thank you, U&I, for your excellent service and unwavering support throughout my visa application. Your professionalism, patience, and guidance made the entire process much smoother. I’m beyond grateful to finally receive my visa grant. Thank you for being part of this milestone—highly recommended! 🤍✨",
     },
