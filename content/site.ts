@@ -287,11 +287,11 @@ export const specials = {
     { icon: "van", text: "Airport pick-up", free: true },
     { icon: "cap", text: "Course application, with no application or processing fees", free: false },
     { icon: "ielts", text: "IELTS / PTE English level mock test*", free: true },
-    { icon: "koala", text: "Australian souvenir for the first 29 guests!*", free: false },
+    { icon: "koala", text: "Australian souvenir for the first 29 guests!**", free: false },
   ] as { icon: "cap" | "ielts" | "van" | "ticket" | "visa" | "koala"; text: string; free: boolean }[],
   notes: [
     "*Terms and conditions apply.",
-    "*The first 29 guests to check in receive an Australian souvenir (celebrating 29 years of U&I Global).",
+    "**The first 29 guests to check in receive an Australian souvenir (celebrating 29 years of U&I Global).",
   ],
   cta: "Register Now",
 };
