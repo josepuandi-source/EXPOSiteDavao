@@ -572,6 +572,7 @@ export const testimonials = {
     },
     {
       name: "Jade Dondoyano",
+      photo: "/images/reviews/ph/jade.jpg",
       service: "Visa application",
       consultant: "Gaselle and Jose",
       quote: "My sincere appreciation goes to the U and I Team for their remarkable service and assistance with my visa application.\n\nTheir dedication and expertise made a big difference in achieving a successful outcome. The team was responsive, supportive, and professional throughout the entire process.\n\nThank you for your valuable help and for making this journey much easier and more manageable.\n\nSalamat Miss Gaselle and Sir Jose din 🤗💕",
