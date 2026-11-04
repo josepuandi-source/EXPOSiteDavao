@@ -282,12 +282,12 @@ export const specials = {
   free: "FREE!",
   /** icon: file in /images/art/icon-<name>.webp. `free` adds the green "FREE!" mark. */
   items: [
-    { icon: "visa", text: "Student visa fee scholarship of up to $2,050", free: false },
+    { icon: "visa", text: "Student visa fee scholarship of up to $2,050*", free: false },
     { icon: "ticket", text: "20% off flights to Australia & New Zealand", free: false },
     { icon: "van", text: "Airport pick-up", free: true },
     { icon: "cap", text: "Course application, with no application or processing fees", free: false },
-    { icon: "ielts", text: "IELTS / PTE English level mock test", free: true },
-    { icon: "koala", text: "Australian souvenir for the first 29 guests!", free: false },
+    { icon: "ielts", text: "IELTS / PTE English level mock test*", free: true },
+    { icon: "koala", text: "Australian souvenir for the first 29 guests!*", free: false },
   ] as { icon: "cap" | "ielts" | "van" | "ticket" | "visa" | "koala"; text: string; free: boolean }[],
   notes: [
     "*Terms and conditions apply.",
