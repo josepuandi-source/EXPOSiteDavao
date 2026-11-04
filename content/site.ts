@@ -554,6 +554,7 @@ export const testimonials = {
     },
     {
       name: "Johanna Charisse Maranon",
+      photo: "/images/reviews/ph/johanna.jpg",
       service: "Student visa",
       consultant: "Gaselle",
       quote: "A Rare, Genuine Gem 💎\n\nBack in 2023, I was just one of the many fresh international students—lost, unsure, and trying to find my place. When a friend invited me to a Study Expo by U&I, I said yes without even knowing how much I would need that moment later on.\n\nThat’s where I met Ma’am Gasselle—a petite, warm, and genuinely kind lady my friend introduced me to. Life surprised me with challenges that pushed me to my limits, and when I finally needed help from an education agent, the only name that came to mind was U&I… and Ma’am Gasselle.\n\nFrom having absolutely no clue about anything, she guided me through every step with patience and care. We went through many ups and downs during my visa process, yet not once did I doubt that she truly cares for the students she helps. She puts her heart into her work, and it shows in every conversation, every reminder, every effort she gives.\n\nIt is rare to find an agent who is truly genuine.\nAnd I feel blessed to have found one.\n\nHeartfelt. Practical. Reliable.\nThank you, Ma’am Gasselle, for everything.",
@@ -593,6 +594,7 @@ export const testimonials = {
     },
     {
       name: "Gherwin Agbayani",
+      photo: "/images/reviews/ph/gherwin.jpg",
       service: "Visa application",
       quote: "I would like to express my sincere appreciation to the U and I Team for their outstanding support throughout my visa processing and approval journey.\nFrom the very beginning, they were professional, responsive, and incredibly knowledgeable. The entire process, which can often feel overwhelming and stressful, was handled with such care and efficiency that it gave me complete peace of mind. Every question I had was answered promptly, and they guided me step by step, ensuring that all requirements were met without confusion or delay.\nWhat truly stood out was their dedication and attention to detail. They went above and beyond to make sure everything was in order, and their expertise played a huge role in the successful outcome of my application.\nI am genuinely grateful for their support and would highly recommend their services to anyone seeking reliable and trustworthy visa assistance. Thank you once again for making this important milestone possible!",
     },
