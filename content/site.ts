@@ -326,7 +326,7 @@ export const specialists = {
       background: "/images/specialists/bg/davao-soft.jpg",
       link: "https://www.facebook.com/profile.php?id=61578799293848",
       branch: "Davao office",
-      points: ["8 years of Australian education counselling experience", "Study plans for various backgrounds including health, education and business", "Full support from application to visa"],
+      points: ["5+ years of Australian education counselling experience", "Study plans for various backgrounds including health, education and business", "Full support from application to visa"],
     },
     {
       name: "Suzzy",
@@ -335,9 +335,9 @@ export const specialists = {
       link: "https://www.facebook.com/profile.php?id=61590555390155",
       branch: "Cagayan de Oro office",
       points: [
+        "5+ years of Australian education counselling experience",
         "TAFE specialist for Nursing, Trades, Business, and Education",
         "Exclusive School Scholarship for University courses",
-        "Pre-departure assistance for prospective students to Australia",
       ],
     },
     {
