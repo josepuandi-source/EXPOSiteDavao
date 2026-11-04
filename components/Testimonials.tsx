@@ -112,7 +112,8 @@ function ReviewCards() {
   const [open, setOpen] = useState<Review | null>(null);
   const [all, setAll] = useState(false);
   const close = useCallback(() => setOpen(null), []);
-  const items = testimonials.items;
+  // Reviews with a photo come first; otherwise the content order is kept.
+  const items = [...testimonials.items.filter((t) => t.photo), ...testimonials.items.filter((t) => !t.photo)];
   const shown = all ? items : items.slice(0, FIRST);
   return (
     <>
