@@ -486,7 +486,7 @@ export const move = {
   items: [
     { icon: "home", title: "Accommodation Support", text: "U&I Global team in Australia assists students with finding accommodation on arrival." },
     { icon: "briefcase", title: "Job Search Support", text: "Assistance with job interviews with our partner network and U&I Alumni." },
-    { icon: "device", title: "Arrival Assistance", text: "SIM cards, transport cards, opening a bank account and finding places near your home when you land." },
+    { icon: "device", title: "Arrival Assistance", text: "Free airport pick-up, SIM cards, transport cards, opening a bank account and finding places near your home when you land." },
     { icon: "clipboard", title: "TFN / ABN Guidance", text: "Step-by-step help applying for your Tax File Number and Australian Business Number." },
     { icon: "globe", title: "Life in Australia Guidance", text: "Advice on everyday life and the essential services you will need in Australia." },
     { icon: "users", title: "Student Community & Events", text: "Events at U&I offices in Australia where students meet, make friends and build connections." },
