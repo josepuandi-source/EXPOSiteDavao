@@ -376,8 +376,8 @@ export const specialists = {
       link: "https://www.facebook.com/profile.php?id=61594543236091",
       background: "/images/specialists/bg/melbourne-soft.webp",
       branch: "Melbourne office",
-      // Third point to come: "Alumni of <school>" once the school is confirmed
-      points: ["Hospitality and Trades pathway guidance", "Arrival set-up assistance for new students in Australia"],
+      // "Alumni of <school>" line to come once the school is confirmed
+      points: ["Specialist in Diploma pathways into University degrees", "Hospitality and Trades pathway guidance", "Arrival set-up assistance for new students in Australia"],
     },
   ] as { name: string; photo?: string; link?: string; bookingSoon?: boolean; branch: string; points: string[]; background?: string }[],
 };
