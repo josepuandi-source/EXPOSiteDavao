@@ -525,18 +525,21 @@ export const testimonials = {
     },
     {
       name: "Mary Joy Pagaran",
+      photo: "/images/reviews/ph/maryjoy.jpg",
       service: "Student visa",
       consultant: "Jose",
       quote: "I had a great experience with U&I Agency for my student visa application. They made the entire process incredibly easy and stress-free. My agent, Jose, was fantastic—he was efficient, professional, and everything went through without any issues. The whole experience was fast and smooth. Thank you, U&I and Jose, for your great work!",
     },
     {
       name: "Heaven Sabbyna",
+      photo: "/images/reviews/ph/heaven.jpg",
       service: "Visa application",
       consultant: "Gaselle",
       quote: "A very special thank you to Miss Gaselle for her patience and support throughout the whole process. She was always easy to reach out to and talk to whenever I had questions or needed guidance. I truly appreciate all the help she gave me every step of the way.\n\nImagine, I got it in only 3 weeks!\n\nIf you are looking for a visa agent, Miss Gaselle and U&I Philippines is definitely the place to go. Highly recommended! ⭐",
     },
     {
       name: "Jasper Visitacion",
+      photo: "/images/reviews/ph/jasper.jpg",
       service: "Student visa and school application",
       consultant: "Jose",
       quote: "I had an excellent experience with Jose UandI from U&I Global Brisbane. He was professional, knowledgeable, and very helpful throughout my student visa and school application process. I really appreciated his guidance and support every step of the way. Highly recommended!",
@@ -549,6 +552,7 @@ export const testimonials = {
     },
     {
       name: "Joash Galario",
+      photo: "/images/reviews/ph/joash.jpg",
       service: "Student visa",
       consultant: "Jose",
       quote: "I had a really good experience with U&I Global during my student visa application. Jose was very approachable, helpful, and easy to talk to. He guided me through every step, answered my questions clearly, and made the whole process much less stressful. I’m very grateful for all the support and assistance. Thank you so much!!!",
