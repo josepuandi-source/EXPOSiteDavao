@@ -395,18 +395,12 @@ export const schools = {
    * hideCaption: leave out the school/specialist line under that poster.
    */
   items: [
-    { school: "Griffith University", specialist: "P'Aew", poster: "/images/schools/aew-griffith.webp" },
-    { school: "Kaplan Business School", specialist: "P'Aew", poster: "/images/schools/aew-kaplan.webp" },
-    { school: "Greenwich College", specialist: "P'Blue", poster: "/images/schools/blue-greenwich.webp" },
-    { school: "Greystone College", specialist: "P'Blue", poster: "/images/schools/blue-greystone.webp" },
-    { school: "ILSC Language Schools", specialist: "P'Blue", poster: "/images/schools/blue-ilsc.webp" },
-    { school: "English Path (EP)", specialist: "P'Fern", poster: "/images/schools/fern-ep.webp" },
-    { school: "Langports", specialist: "P'Fern", poster: "/images/schools/fern-langports.webp" },
-    { school: "Alma Mater College Australia (AMCA)", specialist: "P'Mookie", poster: "/images/schools/mookie-amca.webp" },
-    { school: "TAFE Queensland", specialist: "P'Mookie", poster: "/images/schools/mookie-tafeqld.webp" },
-    { school: "ECA College & APIC", specialist: "P'Titi", poster: "/images/schools/titi-eca-apic.webp" },
-    { school: "Southern Cross University", specialist: "P'Titi", poster: "/images/schools/titi-scu.webp" },
-  ] as { school: string; specialist: string; poster: string; hideCaption?: boolean }[],
+    { school: "APIC – Asia Pacific International College", poster: "/images/schools/ph-apic.webp" },
+    { school: "Griffith University", poster: "/images/schools/ph-griffith.webp" },
+    { school: "UniSQ – University of Southern Queensland", poster: "/images/schools/ph-unisq.webp" },
+    { school: "Greystone Institute", poster: "/images/schools/ph-greystone.webp" },
+    { school: "Box Hill Institute", poster: "/images/schools/ph-boxhill.webp" },
+  ] as { school: string; specialist?: string; poster: string; hideCaption?: boolean }[],
 };
 
 // ---------------------------------------------------------------------------

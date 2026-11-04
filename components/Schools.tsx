@@ -25,7 +25,7 @@ export default function Schools() {
           ))}
         />
         <PosterViewer>
-          <PosterCarousel slides={slides} width={1080} height={1350} />
+          <PosterCarousel slides={slides} width={1055} height={1491} />
         </PosterViewer>
       </Container>
     </section>
