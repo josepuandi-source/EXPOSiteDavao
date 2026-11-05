@@ -44,7 +44,7 @@ export default function Specialists() {
       <Container>
         <SectionHeader title={specialists.title} subtitle={specialists.subtitle} />
         <div className="flex flex-wrap justify-center gap-4 sm:gap-7 lg:gap-5">
-          {specialists.items.map((s, i) => {
+          {specialists.items.filter((s) => !s.hidden).map((s, i) => {
             // Cards with a booking link open it; the rest are plain cards
             const Card = s.link ? "a" : "article";
             return [

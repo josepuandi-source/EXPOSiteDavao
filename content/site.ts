@@ -310,7 +310,7 @@ export const specialists = {
   bookingSoonLabel: "Booking link coming soon" as string | undefined,
   /** Desktop layout: cards per row, and start a new row after these cards (0-based). */
   perRow: 3 as 3 | 4,
-  breakAfter: [2] as number[],
+  breakAfter: [1] as number[], // after Suzzy (Rashell's card is hidden); make it [2] when Rashell is shown
   /** Shown on a card that has no photo yet. */
   photoSoon: "Photo coming soon" as string | undefined,
   /**
@@ -342,6 +342,8 @@ export const specialists = {
     },
     {
       name: "Rashell",
+      // Hidden until her photo, Facebook link and points are ready; delete this line to show the card
+      hidden: true,
       background: "/images/specialists/bg/cebu-soft.jpg",
       bookingSoon: true,
       branch: "Cebu office",
@@ -380,7 +382,7 @@ export const specialists = {
       // "Alumni of <school>" line to come once the school is confirmed
       points: ["Specialist in Diploma pathways into University degrees", "Hospitality and Trades pathway guidance", "Arrival set-up assistance for new students in Australia"],
     },
-  ] as { name: string; photo?: string; link?: string; bookingSoon?: boolean; branch: string; points: string[]; background?: string }[],
+  ] as { name: string; hidden?: boolean; photo?: string; link?: string; bookingSoon?: boolean; branch: string; points: string[]; background?: string }[],
 };
 
 // ---------------------------------------------------------------------------
