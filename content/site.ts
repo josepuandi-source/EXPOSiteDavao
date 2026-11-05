@@ -532,11 +532,11 @@ export const testimonials = {
       quote: "A very special thank you to Miss Gaselle for her patience and support throughout the whole process. She was always easy to reach out to and talk to whenever I had questions or needed guidance. I truly appreciate all the help she gave me every step of the way.\n\nImagine, I got it in only 3 weeks!\n\nIf you are looking for a visa agent, Miss Gaselle and U&I Philippines is definitely the place to go. Highly recommended! ⭐",
     },
     {
-      name: "Jasper V.",
-      photo: "/images/reviews/ph/jasper.jpg",
-      service: "Student visa and school application",
-      consultant: "Jose",
-      quote: "I had an excellent experience with Jose UandI from U&I Global Brisbane. He was professional, knowledgeable, and very helpful throughout my student visa and school application process. I really appreciated his guidance and support every step of the way. Highly recommended!",
+      name: "Ain A.",
+      photo: "/images/reviews/ph/ain.jpg",
+      service: "Student visa & PTE mock test",
+      consultant: "Suzzy",
+      quote: "My experience with U&I Global has been truly positive and beyond my expectations. I honestly didn't expect my application process to move so quickly. The agents were very hands-on, responsive, and always ready to answer my questions whenever I had concerns.\n\nThey also helped me improve my Genuine Student (GS) Statement, making sure my answers were clear, convincing, and well-supported. My documents were processed promptly but with great care and attention to detail. We went through several rounds of checking and rechecking to ensure that all information was accurate, consistent, and properly backed up by supporting documents.\n\nI really appreciate their patience, dedication, and guidance throughout my application journey. Their assistance made the process much smoother, less stressful, and more manageable. I am truly grateful to U&I Global for helping me take this important step toward achieving my dream of studying in Australia. Thank you for your excellent service and support!\n\nGood morning po, Ma'am Suzzy! I sent you an email po regarding my PTE score report from the 2nd retake yesterday, August 5. Thank you po for offering free mock exam, nakatulong po siya. 🥹",
     },
     {
       name: "Genne T.",
@@ -610,11 +610,11 @@ export const testimonials = {
       quote: "It was my first time joining this kind of meet and greet event. It was really nice because you get to meet many different people from other countries, like Koreans and Taiwanese. It’s not just their event they also include a tour. Wow, I was really impressed! Thank you so much, U and I Global. Highly recommended ❤️❤️❤️❤️❤️",
     },
     {
-      name: "Ain A.",
-      photo: "/images/reviews/ph/ain.jpg",
-      service: "Student visa & PTE mock test",
-      consultant: "Suzzy",
-      quote: "My experience with U&I Global has been truly positive and beyond my expectations. I honestly didn't expect my application process to move so quickly. The agents were very hands-on, responsive, and always ready to answer my questions whenever I had concerns.\n\nThey also helped me improve my Genuine Student (GS) Statement, making sure my answers were clear, convincing, and well-supported. My documents were processed promptly but with great care and attention to detail. We went through several rounds of checking and rechecking to ensure that all information was accurate, consistent, and properly backed up by supporting documents.\n\nI really appreciate their patience, dedication, and guidance throughout my application journey. Their assistance made the process much smoother, less stressful, and more manageable. I am truly grateful to U&I Global for helping me take this important step toward achieving my dream of studying in Australia. Thank you for your excellent service and support!\n\nGood morning po, Ma'am Suzzy! I sent you an email po regarding my PTE score report from the 2nd retake yesterday, August 5. Thank you po for offering free mock exam, nakatulong po siya. 🥹",
+      name: "Jasper V.",
+      photo: "/images/reviews/ph/jasper.jpg",
+      service: "Student visa and school application",
+      consultant: "Jose",
+      quote: "I had an excellent experience with Jose UandI from U&I Global Brisbane. He was professional, knowledgeable, and very helpful throughout my student visa and school application process. I really appreciated his guidance and support every step of the way. Highly recommended!",
     },
   ] as {
     name: string;
