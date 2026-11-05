@@ -47,7 +47,16 @@ export default function Specials() {
                       className={`absolute left-1/2 -top-9 h-[64px] w-auto sm:-top-12 sm:h-[92px] ${twoByTwo ? "lg:-top-14 lg:h-[110px]" : ""} -translate-x-1/2 drop-shadow-[0_6px_10px_rgba(13,31,58,.25)] transition-transform duration-300 ease-out group-hover:-translate-y-1 group-hover:scale-105`}
                     />
                     <p className={`font-heading text-[14.5px] font-normal leading-snug text-navy-900 sm:text-[21px] ${twoByTwo ? "lg:text-[25px]" : ""}`}>
-                      {it.text}
+                      {/* A "FREE" inside the text gets the same big bold italic look as the FREE! tag */}
+                      {it.text.split(/(FREE!?)/).map((part, j) =>
+                        /^FREE!?$/.test(part) ? (
+                          <span key={j} className="mx-1 inline-block -rotate-3 font-heading text-[20px] font-extrabold italic leading-none text-primary-700 sm:text-[30px]">
+                            {part}
+                          </span>
+                        ) : (
+                          part
+                        ),
+                      )}
                       {it.free && (
                         <span className="ml-1.5 inline-block -rotate-3 font-heading text-[20px] sm:ml-2 sm:text-[30px] font-extrabold italic leading-none text-primary-700">
                           {specials.free}
