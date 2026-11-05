@@ -16,6 +16,8 @@ const ICON_SIZE: Record<string, [number, number]> = {
 /** The "register early" EXPO specials: blue pill headline and six tabbed cards with 3D icons (two per row on phones). */
 export default function Specials() {
   const { specials, hero } = useContent();
+  // Four perks sit as a roomier 2×2 grid; six (or more) keep the three-across layout.
+  const twoByTwo = specials.items.length === 4;
   return (
     <section id="specials" className="relative overflow-hidden bg-[linear-gradient(180deg,#6CA9DF_0%,#B6D1EF_55%,#FFF1CF_100%)] pb-12 pt-10 sm:pb-16 sm:pt-14 md:pb-20">
       <div aria-hidden="true" className="pointer-events-none absolute -left-40 top-16 h-64 w-[38rem] bg-[radial-gradient(closest-side,rgba(255,255,255,.25),transparent)]" />
@@ -27,7 +29,7 @@ export default function Specials() {
           </h2>
         </Reveal>
 
-        <div className="mx-auto mt-12 grid max-w-6xl grid-cols-2 gap-x-3 gap-y-11 sm:mt-16 sm:gap-x-7 sm:gap-y-16 lg:grid-cols-3">
+        <div className={`mx-auto mt-12 grid grid-cols-2 gap-x-3 gap-y-11 sm:mt-16 sm:gap-x-7 sm:gap-y-16 ${twoByTwo ? "max-w-5xl lg:gap-x-10 lg:gap-y-20" : "max-w-6xl lg:grid-cols-3"}`}>
           {specials.items.map((it, i) => {
             const [w, h] = ICON_SIZE[it.icon];
             return (
@@ -36,15 +38,15 @@ export default function Specials() {
                 <div className="group relative h-full transition-transform duration-300 ease-out hover:-translate-y-1.5">
                   {/* Blue tab behind the card's top edge */}
                   <div aria-hidden="true" className="absolute -top-2 inset-x-0 h-12 rounded-t-[20px] bg-primary-700 sm:-top-2.5 sm:rounded-t-[26px]" />
-                  <div className="relative flex h-full min-h-[128px] flex-col items-center justify-center rounded-[20px] bg-white px-2.5 pb-4 pt-10 text-center sm:min-h-[170px] sm:rounded-[26px] sm:px-6 sm:pb-6 sm:pt-14 shadow-[0_10px_24px_rgba(13,31,58,.14)] transition-shadow duration-300 group-hover:shadow-[0_18px_36px_rgba(13,31,58,.22)]">
+                  <div className={`relative flex h-full min-h-[128px] flex-col items-center justify-center rounded-[20px] bg-white px-2.5 pb-4 pt-10 text-center sm:rounded-[26px] sm:px-6 sm:pb-6 sm:pt-14 ${twoByTwo ? "sm:min-h-[200px] lg:min-h-[230px] lg:px-10 lg:pb-8 lg:pt-16" : "sm:min-h-[170px]"} shadow-[0_10px_24px_rgba(13,31,58,.14)] transition-shadow duration-300 group-hover:shadow-[0_18px_36px_rgba(13,31,58,.22)]`}>
                     <Image
                       src={`/images/art/icon-${it.icon}.webp`}
                       alt=""
                       width={w}
                       height={h}
-                      className="absolute left-1/2 -top-9 h-[64px] w-auto sm:-top-12 sm:h-[92px] -translate-x-1/2 drop-shadow-[0_6px_10px_rgba(13,31,58,.25)] transition-transform duration-300 ease-out group-hover:-translate-y-1 group-hover:scale-105"
+                      className={`absolute left-1/2 -top-9 h-[64px] w-auto sm:-top-12 sm:h-[92px] ${twoByTwo ? "lg:-top-14 lg:h-[110px]" : ""} -translate-x-1/2 drop-shadow-[0_6px_10px_rgba(13,31,58,.25)] transition-transform duration-300 ease-out group-hover:-translate-y-1 group-hover:scale-105`}
                     />
-                    <p className="font-heading text-[14.5px] font-normal leading-snug text-navy-900 sm:text-[21px]">
+                    <p className={`font-heading text-[14.5px] font-normal leading-snug text-navy-900 sm:text-[21px] ${twoByTwo ? "lg:text-[25px]" : ""}`}>
                       {it.text}
                       {it.free && (
                         <span className="ml-1.5 inline-block -rotate-3 font-heading text-[20px] sm:ml-2 sm:text-[30px] font-extrabold italic leading-none text-primary-700">
@@ -59,7 +61,7 @@ export default function Specials() {
           })}
         </div>
 
-        <div className="mx-auto mt-6 flex max-w-6xl flex-col gap-1 text-[11.5px] sm:mt-8 sm:text-[13px] text-navy-700 sm:flex-row sm:justify-between">
+        <div className={`mx-auto mt-6 flex flex-col ${twoByTwo ? "max-w-5xl" : "max-w-6xl"} gap-1 text-[11.5px] sm:mt-8 sm:text-[13px] text-navy-700 sm:flex-row sm:justify-between`}>
           {specials.notes.map((n) => (
             <p key={n}>{n}</p>
           ))}
