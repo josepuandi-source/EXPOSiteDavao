@@ -398,11 +398,14 @@ export const schools = {
    * hideCaption: leave out the school/specialist line under that poster.
    */
   items: [
-    { school: "APIC – Asia Pacific International College", poster: "/images/schools/ph-apic.webp" },
-    { school: "Griffith University", poster: "/images/schools/ph-griffith.webp" },
-    { school: "UniSQ – University of Southern Queensland", poster: "/images/schools/ph-unisq.webp" },
-    { school: "Greystone Institute", poster: "/images/schools/ph-greystone.webp" },
-    { school: "Box Hill Institute", poster: "/images/schools/ph-boxhill.webp" },
+    { school: "APIC – Asia Pacific International College", poster: "/images/schools/ph2-apic.webp" },
+    { school: "Greystone Institute", poster: "/images/schools/ph2-greystone.webp" },
+    { school: "Griffith University", poster: "/images/schools/ph2-griffith.webp" },
+    { school: "Box Hill Institute", poster: "/images/schools/ph2-boxhill.webp" },
+    { school: "Monaro Higher Education", poster: "/images/schools/ph2-monaro.webp" },
+    { school: "TAFE Queensland", poster: "/images/schools/ph2-tafeqld.webp" },
+    { school: "ECA College", poster: "/images/schools/ph2-eca.webp" },
+    { school: "Kaplan Business School Australia", poster: "/images/schools/ph2-kaplan.webp" },
   ] as { school: string; specialist?: string; poster: string; hideCaption?: boolean }[],
 };
 
