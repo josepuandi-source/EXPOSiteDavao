@@ -499,7 +499,7 @@ export const move = {
 // ---------------------------------------------------------------------------
 export const testimonials = {
   title: "What Our Students Say",
-  subtitle: "Real Google reviews from students U&I has helped.",
+  subtitle: "Real reviews from students U&I has helped.",
   labels: { service: "Service", consultant: "Consultant", course: "Course", school: "School", readMore: "Read more", source: "Review", showMore: "See more reviews", showLess: "Show fewer reviews", close: "Close" },
   tabs: { reviews: "Student reviews", grants: "Visa grants", study: "Study experiences" },
   /** Visa grant posts (placeholder: from the U&I Thailand page), newest first. */
@@ -610,9 +610,17 @@ export const testimonials = {
       quote: "It was my first time joining this kind of meet and greet event. It was really nice because you get to meet many different people from other countries, like Koreans and Taiwanese. It’s not just their event they also include a tour. Wow, I was really impressed! Thank you so much, U and I Global. Highly recommended ❤️❤️❤️❤️❤️",
     },
     {
-      name: "Ain Z.",
+      name: "Ain A.",
+      photo: "/images/reviews/ph/ain.jpg",
       service: "Student visa",
       quote: "My experience with U&I Global has been truly positive and beyond my expectations. I honestly didn't expect my application process to move so quickly. The agents were very hands-on, responsive, and always ready to answer my questions whenever I had concerns.\n\nThey also helped me improve my Genuine Student (GS) Statement, making sure my answers were clear, convincing, and well-supported. My documents were processed promptly but with great care and attention to detail. We went through several rounds of checking and rechecking to ensure that all information was accurate, consistent, and properly backed up by supporting documents.\n\nI really appreciate their patience, dedication, and guidance throughout my application journey. Their assistance made the process much smoother, less stressful, and more manageable. I am truly grateful to U&I Global for helping me take this important step toward achieving my dream of studying in Australia. Thank you for your excellent service and support!",
+    },
+    {
+      name: "Ain A.",
+      photo: "/images/reviews/ph/ain.jpg",
+      service: "PTE mock test",
+      consultant: "Suzzy",
+      quote: "Good morning po, Ma'am Suzzy! I sent you an email po regarding my PTE score report from the 2nd retake yesterday, August 5. Thank you po for offering free mock exam, nakatulong po siya. 🥹",
     },
   ] as {
     name: string;

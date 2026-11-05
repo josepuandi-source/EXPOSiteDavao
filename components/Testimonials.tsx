@@ -119,7 +119,7 @@ function ReviewCards() {
     <>
       <div className="grid grid-cols-2 gap-x-3 gap-y-6 sm:gap-6 lg:grid-cols-4">
         {shown.map((t, i) => (
-          <Reveal key={t.name} delay={(i % 4) * 0.06}>
+          <Reveal key={`${t.name}-${i}`} delay={(i % 4) * 0.06}>
             <article className="flex h-full flex-col">
               <div className="relative aspect-square overflow-hidden rounded-2xl shadow-[0_10px_24px_rgba(13,31,58,.14)]">
                 <Avatar t={t} sizes="(min-width: 1024px) 280px, 45vw" />
