@@ -45,6 +45,10 @@ export default function PosterCarousel({
   // A drag ends in a click too; only treat it as a tap if the pointer barely moved.
   const downX = useRef(0);
 
+  // Embla can only loop when there are enough slides to overfill the view, so a short set
+  // (e.g. 5 posters) is repeated until there are at least 12 – the glide then never stops.
+  const loopSlides = slides.length ? Array.from({ length: Math.max(1, Math.ceil(12 / slides.length)) }, () => slides).flat() : slides;
+
   // Arrow steps pause the glide briefly, then it carries on by itself.
   const step = useCallback(
     (dir: 1 | -1) => {
@@ -65,8 +69,8 @@ export default function PosterCarousel({
     <div className="relative" role="region" aria-roledescription="carousel">
       <div className="overflow-hidden" ref={emblaRef}>
         <div className="-ml-4 flex">
-          {slides.map((s) => (
-            <div key={s.src} role="group" aria-roledescription="slide" className={`min-w-0 shrink-0 grow-0 pl-4 ${basis}`}>
+          {loopSlides.map((s, i) => (
+            <div key={`${s.src}-${i}`} role="group" aria-roledescription="slide" className={`min-w-0 shrink-0 grow-0 pl-4 ${basis}`}>
               <button
                 type="button"
                 onPointerDown={(e) => (downX.current = e.clientX)}
