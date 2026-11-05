@@ -70,7 +70,7 @@ export default function Specials() {
         <div className="mt-6 flex justify-center sm:mt-8">
           <a
             href={hero.primaryCta.href}
-            className="inline-flex min-h-[60px] items-center rounded-[20px] bg-accent-500 px-10 font-heading text-[22.5px] font-bold text-navy-900 shadow-[0_8px_20px_rgba(13,31,58,.2)] transition-transform hover:-translate-y-0.5 hover:bg-accent-600"
+            className="inline-flex min-h-[75px] items-center rounded-[24px] bg-accent-500 px-[50px] font-heading text-[28px] font-bold text-navy-900 shadow-[0_8px_20px_rgba(13,31,58,.2)] transition-transform hover:-translate-y-0.5 hover:bg-accent-600"
           >
             {specials.cta}
           </a>
