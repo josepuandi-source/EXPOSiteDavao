@@ -373,6 +373,7 @@ export const specialists = {
     },
     {
       name: "Thea",
+      photo: "/images/specialists/ph/thea-tee.png",
       link: "https://www.facebook.com/profile.php?id=61594543236091",
       background: "/images/specialists/bg/melbourne-soft.webp",
       branch: "Melbourne office",
