@@ -285,8 +285,8 @@ export const specials = {
     { icon: "visa", text: "Student visa fee scholarship of up to $2,050*", free: false },
     // Hidden for now: { icon: "ticket", text: "20% off flights to Australia & New Zealand", free: false },
     { icon: "van", text: "Airport pick-up", free: true },
-    { icon: "cap", text: "Course application, with no application or processing fees", free: false },
-    { icon: "ielts", text: "IELTS / PTE English level mock test*", free: true },
+    { icon: "cap", text: "Course Selection Guidance and Application Assistance", free: false },
+    { icon: "ielts", text: "IELTS / PTE 1-Month FREE mock test and review*", free: false },
     // Hidden for now: { icon: "koala", text: "Australian souvenir for the first 29 guests!**", free: false },
   ] as { icon: "cap" | "ielts" | "van" | "ticket" | "visa" | "koala"; text: string; free: boolean }[],
   notes: [
