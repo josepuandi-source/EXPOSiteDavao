@@ -519,6 +519,7 @@ export const testimonials = {
   items: [
     {
       name: "Babylou C.",
+      photo: "/images/reviews/ph/babylou.jpg",
       service: "Visa application",
       consultant: "Gaselle",
       quote: "A huge thank you to U&I Global Australia Philippines, especially Gaselle, for making my visa journey so much easier. My application was lodged at the last minute, and it was a risky case because some supporting documents were still pending. Despite the challenges, Gaselle handled everything with professionalism, patience, and genuine care.\nI was beyond grateful when my visa was approved in just 10 days! Thank you for believing in my case and guiding me every step of the way. I highly recommend U&I Global Australia Philippines to anyone looking for reliable and dedicated migration support. 🙌✨",
@@ -567,6 +568,7 @@ export const testimonials = {
     },
     {
       name: "Denise V.",
+      photo: "/images/reviews/ph/denise.jpg",
       service: "Visa application",
       consultant: "Jose",
       quote: "I feel incredibly fortunate to have had my visa application handled by Mr. Jose Palileo at U&I Migration. My case was quite complex, but Mr. Jose managed it with impressive efficiency, professionalism, and attention to detail. He kept the process smooth and clear every step of the way.\n\nTo my surprise and relief, my visa was approved, and I truly believe his expertise made all the difference. I highly recommend U&I Migration and Mr. Jose to anyone seeking reliable and knowledgeable assistance with their visa application.",
@@ -586,6 +588,7 @@ export const testimonials = {
     },
     {
       name: "Arianne Grace L.",
+      photo: "/images/reviews/ph/arianne.jpg",
       service: "Student visa",
       // Jouana started the case and Gaselle took it over; the quote is kept as written
       consultant: "Jouana, then Gaselle",
@@ -611,7 +614,8 @@ export const testimonials = {
       quote: "Thank you, U&I, for your excellent service and unwavering support throughout my visa application. Your professionalism, patience, and guidance made the entire process much smoother. I’m beyond grateful to finally receive my visa grant. Thank you for being part of this milestone—highly recommended! 🤍✨",
     },
     {
-      name: "Erick Joseph S.",
+      name: "Erick and Karenn S.",
+      photo: "/images/reviews/ph/erick-karenn.jpg",
       service: "Meet and greet event",
       quote: "It was my first time joining this kind of meet and greet event. It was really nice because you get to meet many different people from other countries, like Koreans and Taiwanese. It’s not just their event they also include a tour. Wow, I was really impressed! Thank you so much, U and I Global. Highly recommended ❤️❤️❤️❤️❤️",
     },
