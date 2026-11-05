@@ -700,7 +700,7 @@ export const offices = {
     { name: "Bangkok (Thailand)", phones: [{ number: "+66 81-116-5186", area: "Bangkok" }, { number: "+66 99-921-5899", area: "Chiang Mai" }], email: "information@uandiedu.com", address: "Samyan Mitrtown Office Tower, Floor 24, Mitrtown Office, 944 Rama IV Rd, Wang Mai, Pathum Wan, Bangkok 10330, Thailand" },
     { name: "Seoul (Korea)", phone: "+82 10 4008 5126", email: "information@uandiedu.com", address: "Digitally integrated operational office managed by U&I staff" },
     { name: "Busan (Korea)", phone: "+82 10 4008 5126", email: "information@uandiedu.com", address: "Level 9, 694 Jungang-daero, Busanjin-gu, Busan, Korea, 47216" },
-    { name: "Ulaanbaatar (Mongolia)", email: "information@uandiedu.com" },
+    { name: "Ulaanbaatar (Mongolia)", email: "information@uandiedu.com", address: "Digitally integrated operational office managed by U&I staff" },
   ] as {
     name: string;
     phone?: string;
