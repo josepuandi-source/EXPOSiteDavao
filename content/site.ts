@@ -463,7 +463,7 @@ export const about = {
   /** Use **double asterisks** to bold-highlight a phrase. */
   paragraphs: [
     "For over 29 years U&I Global has helped students plan their study abroad, from choosing a course and institution to mapping out their future education pathway.",
-    "With teams and networks in many countries, we give personal advice and connect students with quality education opportunities.",
+    "With teams and networks in many countries, we give personalised advice and connect students with quality education opportunities.",
     "**Step into our 30th year with U&I Global in 2027.**",
   ],
 };
