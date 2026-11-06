@@ -406,6 +406,7 @@ export const schools = {
     { school: "TAFE Queensland", poster: "/images/schools/ph2-tafeqld.webp" },
     { school: "ECA College", poster: "/images/schools/ph2-eca.webp" },
     { school: "Kaplan Business School Australia", poster: "/images/schools/ph2-kaplan.webp" },
+    { school: "AMCA", poster: "/images/schools/ph2-amca.webp" },
   ] as { school: string; specialist?: string; poster: string; hideCaption?: boolean }[],
 };
 
