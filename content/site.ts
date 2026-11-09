@@ -356,7 +356,7 @@ export const specialists = {
       name: "Maria",
       photo: "/images/specialists/ph/maria-v3.png",
       background: "/images/specialists/bg/manila-soft.jpg",
-      bookingSoon: true, // Facebook link not yet provided
+      link: "https://www.facebook.com/profile.php?id=61596397230148",
       branch: "Manila office",
       points: [
         "3+ years experience for Australian Student Visa Processing",
