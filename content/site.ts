@@ -309,8 +309,8 @@ export const specialists = {
   /** Shown (greyed out) on a card whose link isn't ready yet. */
   bookingSoonLabel: "Booking link coming soon" as string | undefined,
   /** Desktop layout: cards per row, and start a new row after these cards (0-based). */
-  perRow: 3 as 3 | 4,
-  breakAfter: [1] as number[], // after Suzzy (Rashell's card is hidden); make it [2] when Rashell is shown
+  perRow: 4 as 3 | 4,
+  breakAfter: [3] as number[], // after Maria: Philippines team on the top row
   /** Shown on a card that has no photo yet. */
   photoSoon: "Photo coming soon" as string | undefined,
   /**
@@ -342,12 +342,27 @@ export const specialists = {
     },
     {
       name: "Rashell",
-      // Hidden until her photo, Facebook link and points are ready; delete this line to show the card
-      hidden: true,
+      photo: "/images/specialists/ph/rashell-v2.png",
       background: "/images/specialists/bg/cebu-soft.jpg",
-      bookingSoon: true,
+      link: "https://www.facebook.com/profile.php?id=61595990537489",
       branch: "Cebu office",
-      points: [],
+      points: [
+        "Experience as an Australian International Student",
+        "Aged Care and Community Services Specialist",
+        "Finding Jobs and Accommodations",
+      ],
+    },
+    {
+      name: "Maria",
+      photo: "/images/specialists/ph/maria-v3.png",
+      background: "/images/specialists/bg/manila-soft.jpg",
+      bookingSoon: true, // Facebook link not yet provided
+      branch: "Manila office",
+      points: [
+        "3+ years experience for Australian Student Visa Processing",
+        "Study and Career Background Assessment for School Applications",
+        "Vocational Pathways for Trades, Construction and Health",
+      ],
     },
     {
       name: "Gaselle",
