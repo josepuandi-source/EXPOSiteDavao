@@ -309,8 +309,8 @@ export const specialists = {
   /** Shown (greyed out) on a card whose link isn't ready yet. */
   bookingSoonLabel: "Booking link coming soon" as string | undefined,
   /** Desktop layout: cards per row, and start a new row after these cards (0-based). */
-  perRow: 4 as 3 | 4,
-  breakAfter: [3] as number[], // after Maria: Philippines team on the top row
+  perRow: 3 as 3 | 4,
+  breakAfter: [2] as number[], // after Rashell: Philippines team on the top row
   /** Shown on a card that has no photo yet. */
   photoSoon: "Photo coming soon" as string | undefined,
   /**
@@ -354,6 +354,8 @@ export const specialists = {
     },
     {
       name: "Maria",
+      // Hidden for now; delete this line to show the card again (and set perRow: 4, breakAfter: [3])
+      hidden: true,
       photo: "/images/specialists/ph/maria-v3.png",
       background: "/images/specialists/bg/manila-soft.jpg",
       link: "https://www.facebook.com/profile.php?id=61596397230148",
